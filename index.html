@@ -55,7 +55,7 @@
           </li>
         
           <li>
-            <a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (3)/">从wordpress主题中看CSS设计</a>
+            <a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (2)/">从wordpress主题中看CSS设计</a>
           </li>
         
           <li>
@@ -87,7 +87,7 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0ja0009h0tg0rakfdkt">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b7300099ctgodzgmmx6">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -137,12 +137,6 @@
   
     <article class="hentry">
 		
-	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0io0000h0tg4p5ldfyx">
-        <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
-      </a>
-    
-
 		
 			<header class="entry-header">
 				<h2 class="entry-title"><a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (10)/" rel="bookmark">从wordpress主题中看CSS设计</a></h2>	
@@ -151,12 +145,24 @@
 		<!-- .entry-header -->
 		<div class="entry-content">
 			
-				最近想做个个人博客，看上了wordpress的[twentyfifteen](https://wordpress.org/themes/twentyfifteen/)模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的...
-				
-				<p class="article-more-link">
-					<a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (10)/#more">Read More</a>
-				</p>
-				
+				<hr>
+<h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>最近想做个个人博客，看上了wordpress的<a href="https://wordpress.org/themes/twentyfifteen/" target="_blank" rel="external">twentyfifteen</a>模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的，于是就掉入了源码坑里，爬了一周才算勉强爬出来(请别要求一个后端转过来的同学太多)。所以爬出来后，觉得这个坑里还是有很多有营养的东西，毕竟是大公司，所有标准都是最新的，所以想总结下学到的东西，方便以后使用(持续更新中)</p>
+<hr>
+<h2 id="Responsive-page-干货都写在最前面"><a href="#Responsive-page-干货都写在最前面" class="headerlink" title="Responsive page (干货都写在最前面)"></a>Responsive page (干货都写在最前面)</h2><p>在移动互联网时代，responsive的页面是必须的，我们知道css3里的media 可以帮我们实现不同设备尺寸的不同显示方式，所以设备尺寸的一个界定值就是我们的一个首要考虑问题，其他不多说，看看人家是如何定义的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 16.1 Mobile Large 620px</div><div class="line"> */</div><div class="line"> @media screen and (min-width: 38.75em) &#123;</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> * 16.2 Tablet Small 740px</div><div class="line"> */</div><div class="line"></div><div class="line">@media screen and (min-width: 46.25em)&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/**</div><div class="line"> * 16.3 Tablet Large 880px</div><div class="line"> */</div><div class="line"> @media screen and (min-width: 55em)&#123;&#125;</div><div class="line"></div><div class="line">/**</div><div class="line"> * 16.4 Desktop Small 955px</div><div class="line"> */</div><div class="line"> </div><div class="line">@media screen and (min-width: 59.6875em)&#123;</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> * 16.5 Desktop Medium 1100px</div><div class="line"> */</div><div class="line"> </div><div class="line">@media screen and (min-width: 68.75em)&#123;</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> * 16.6 Desktop Large 1240px</div><div class="line"> */</div><div class="line">@media screen and (min-width: 77.5em)&#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其中在mock的过程中发现几个tips</p>
+<ul>
+<li>上面只有min-width，没有设置max-width，这是一个灵活的设计，没有max-width就说明他可以从最小满足条件的media开始，只要满足条件，都会被执行到，而我们需要做的就是把共有的部分写在最小尺寸里，或者放最外面，然后在需要更改的部分属性在在需要的尺寸中更改。简单举个栗子：<br>有个导航栏，需要在移动设备的时候隐藏，在桌面浏览器中显示所有，那我们可以这样:<br><img src="http://ww1.sinaimg.cn/large/77a9e622gy1fdiu4ic4mqj20800j0t9e" alt=""></li>
+</ul>
+<hr>
+<h2 id="如何在css文件中使用fontawesome图标字体库"><a href="#如何在css文件中使用fontawesome图标字体库" class="headerlink" title="如何在css文件中使用fontawesome图标字体库"></a>如何在css文件中使用fontawesome图标字体库</h2><p>我们知道的是要在页面中使用fontawesome的图标很简单，只需要在html代码中加入如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;i class=&quot;fa fa-address-book-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#&quot;&gt;列表&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>其中fa代表的是默认图标大小，如果想改变图标的大小，可以使用集成的fa-lg(放大33%),fa-2x, fa-3x, fa-4x, fa-5x。所以用起来很爽是吧。</p>
+<p>从wordpress中(其实他没有用fontawesome图标库，而是他们自己的genericons库)，我看到了他是在css中定义这些图标的，试想一下，如果每次使用图标都需要新添加一个元素是不是很累赘，而且重复呢，这不符合程序设计的可复用原则啊！所以很自然的就想到使用class,这样就可以很轻松的在一些元素之前借助于伪类:before加上content神器自动加入，而我需要做的仅仅是在a标签加上一个class名称。</p>
+<p>其中很重要的一步是引入这个新font-family FontAwesome。<br>实现如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">[class*=&quot;font-asesome-icon&quot;]:before &#123;</div><div class="line">  font-family: FontAwesome;</div><div class="line">  font-weight: normal;</div><div class="line">  font-style: normal;</div><div class="line">  display: inline-block;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.secondary-toggle:before &#123;</div><div class="line">    color: #333;</div><div class="line">	font-size: 2rem;</div><div class="line">    content: &quot;\f0c9&quot;;</div><div class="line">    line-height: 40px;</div><div class="line">    width: 40px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;a class=&quot;font-asesome-icon secondary-toggle&quot; href=&quot;#&quot;&gt;列表&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>其中content代表的是该图标的Unicode, 每个fontawesome图标库里都能查到其对应的unicode。<br>上面的是问题一，还有个问题是，我如何改变图标的大小呢？哈哈，我们回想一下这是什么库？对，字体库，所以，既然是字体，改变大小不就是font-size！我们上面是font-size:2rem，也就等于2*16px（rem是什么鬼一会再说），其实仔细查看fontawesome<a href="http://fontawesome.io/examples/" target="_blank" rel="external">官网</a>，然后任选一个图标，点击view css，我们会看到他的实现源码如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.@&#123;fa-css-prefix&#125;-lg &#123;</div><div class="line">  font-size: (4em / 3);</div><div class="line">  line-height: (3em / 4);</div><div class="line">  vertical-align: -15%;</div><div class="line">&#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-2x &#123; font-size: 2em; &#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-3x &#123; font-size: 3em; &#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-4x &#123; font-size: 4em; &#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-5x &#123; font-size: 5em; &#125;</div></pre></td></tr></table></figure>
+
 			
 		</div><!-- .entry-content -->
 		
@@ -188,15 +194,9 @@
   
     <article class="hentry">
 		
-	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0iy0004h0tgyhh347jb">
-        <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
-      </a>
-    
-
 		
 			<header class="entry-header">
-				<h2 class="entry-title"><a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (3)/" rel="bookmark">从wordpress主题中看CSS设计</a></h2>	
+				<h2 class="entry-title"><a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (2)/" rel="bookmark">从wordpress主题中看CSS设计</a></h2>	
 			</header>
 		
 		<!-- .entry-header -->
@@ -205,7 +205,7 @@
 				最近想做个个人博客，看上了wordpress的[twentyfifteen](https://wordpress.org/themes/twentyfifteen/)模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的...
 				
 				<p class="article-more-link">
-					<a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (3)/#more">Read More</a>
+					<a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (2)/#more">Read More</a>
 				</p>
 				
 			
@@ -240,7 +240,7 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0j10005h0tg95adw1z9">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b6m00059ctg9ni7lw5c">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -291,7 +291,7 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0j50006h0tgq7qzbbq8">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b6y00069ctgm9126km6">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -342,14 +342,14 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0is0001h0tguarrj8n4">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b6a00019ctgiy20sric">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
 
 		
 			<header class="entry-header">
-				<h2 class="entry-title"><a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (2)/" rel="bookmark">从wordpress主题中看CSS设计</a></h2>	
+				<h2 class="entry-title"><a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (3)/" rel="bookmark">从wordpress主题中看CSS设计</a></h2>	
 			</header>
 		
 		<!-- .entry-header -->
@@ -358,7 +358,7 @@
 				最近想做个个人博客，看上了wordpress的[twentyfifteen](https://wordpress.org/themes/twentyfifteen/)模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的...
 				
 				<p class="article-more-link">
-					<a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (2)/#more">Read More</a>
+					<a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy (3)/#more">Read More</a>
 				</p>
 				
 			
@@ -393,7 +393,7 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0jn000bh0tgofbjz97s">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b79000b9ctg6gdr1tqz">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -444,7 +444,7 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0js000gh0tg424wmrsf">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b7e000g9ctgj982in3u">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -495,7 +495,7 @@
     <article class="hentry">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0ju000jh0tg3jyeqoq8">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b38b7l000j9ctgj053mwfu">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -545,12 +545,6 @@
   
     <article class="hentry">
 		
-	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0b1k0jy000nh0tgduu46xnl">
-        <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
-      </a>
-    
-
 		
 			<header class="entry-header">
 				<h2 class="entry-title"><a href="/2017/03/11/从wordpress博客中看CSS设计 - Copy/" rel="bookmark">从wordpress主题中看CSS设计</a></h2>	
@@ -596,7 +590,7 @@
   
 
 
-  <nav id="page-nav">
+  <nav id="page-nav" class="page-links hentry">
     
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
   </nav>
