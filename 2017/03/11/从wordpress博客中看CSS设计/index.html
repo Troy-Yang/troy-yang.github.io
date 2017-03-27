@@ -74,7 +74,7 @@
 <article class="hentry has-post-thumbnail">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0s7ca9p0001y8tgrsj83e5d">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0s7v21300006gtg18l4ph2k">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -104,6 +104,23 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">[class*=&quot;font-asesome-icon&quot;]:before &#123;</div><div class="line">  font-family: FontAwesome;</div><div class="line">  font-weight: normal;</div><div class="line">  font-style: normal;</div><div class="line">  display: inline-block;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.secondary-toggle:before &#123;</div><div class="line">    color: #333;</div><div class="line">	font-size: 2rem;</div><div class="line">    content: &quot;\f0c9&quot;;</div><div class="line">    line-height: 40px;</div><div class="line">    width: 40px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;a class=&quot;font-asesome-icon secondary-toggle&quot; href=&quot;#&quot;&gt;列表&lt;/a&gt;</div></pre></td></tr></table></figure>
 <p>其中content代表的是该图标的Unicode, 每个fontawesome图标库里都能查到其对应的unicode。<br>上面的是问题一，还有个问题是，我如何改变图标的大小呢？哈哈，我们回想一下这是什么库？对，字体库，所以，既然是字体，改变大小不就是font-size！我们上面是font-size:2rem，也就等于2*16px（rem是什么鬼一会再说），其实仔细查看fontawesome<a href="http://fontawesome.io/examples/" target="_blank" rel="external">官网</a>，然后任选一个图标，点击view css，我们会看到他的实现源码如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.@&#123;fa-css-prefix&#125;-lg &#123;</div><div class="line">  font-size: (4em / 3);</div><div class="line">  line-height: (3em / 4);</div><div class="line">  vertical-align: -15%;</div><div class="line">&#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-2x &#123; font-size: 2em; &#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-3x &#123; font-size: 3em; &#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-4x &#123; font-size: 4em; &#125;</div><div class="line">.@&#123;fa-css-prefix&#125;-5x &#123; font-size: 5em; &#125;</div></pre></td></tr></table></figure>
+<h2 id="px-em-rem"><a href="#px-em-rem" class="headerlink" title="px, em, rem"></a>px, em, rem</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p><strong>px (pixel，像素)</strong>：是一个虚拟长度单位，是计算机系统的数字化图像长度单位，如果px要换算成物理长度，需要指定精度DPI(Dots Per Inch，每英寸像素数)，在扫描打印时一般都有DPI可选。Windows系统默认是96dpi，Apple系统默认是72dpi</p>
+<p><strong>em</strong> (相对长度单位，相对于当前对象内文本的字体尺寸)：是一个相对长度单位，最初是指字母M的宽度，故名em。现指的是字符宽度的倍数，用法类似百分比，如：0.8em, 1.2em,2em等。通常1em=16px</p>
+<p><strong>rem</strong>（root em，根em）(相对长度单位，相对于根节点<code>html</code>的字体尺寸)</p>
+<p>在wordpress博客中看到使用了<code>rem</code>，之前只知道<code>em</code>，查看了<a href="https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984" target="_blank" rel="external">相关资料</a>后，学习到了:</p>
+<ul>
+<li>rem 和 em 都是根据你设计的fontsize值最终被浏览器解释成pixel的</li>
+<li>em 的值是根据当前他坐在的元素fontsize决定的</li>
+<li>rem的值是由html根节点的fontsize决定的</li>
+<li>em的值会被父元素的fontsize继承在计算(除非使用pixel显示的设置了当前元素的固定fontsize大小)</li>
+<li>rem的值会被在浏览器设置中设置的fontsize大小影响(除非在html根节点下使用了pixel去固定fontsize大小)</li>
+<li>有时为了换算方便，经常为body设置fontsize 为65</li>
+</ul>
+<h3 id="如何选择"><a href="#如何选择" class="headerlink" title="如何选择"></a>如何选择</h3><ul>
+<li>使用rem: 在文本大小值的设置上使用</li>
+<li>使用rem: 在media queies中使用</li>
+<li>在多列布局中，不要使用em或者rem来作为宽度，而使用 <code>%</code>代替</li>
+</ul>
 
 			
 		</div><!-- .entry-content -->
