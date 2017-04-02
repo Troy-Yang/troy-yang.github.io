@@ -84,34 +84,43 @@
 		<div class="entry-content">
 			
 				<hr>
-<h3 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h3><p>看了shadowsocks linux 服务器端的各种安装部署教程，总是记不住，也总是遇到坑，自己留个笔记在这里</p>
+<h3 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h3><p>看了shadowsocks的各种安装部署教程，因为对于linux不熟，所以遇到很多坑，自己留个笔记在这里</p>
 <h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><p>OS: </p>
 <ul>
-<li>Ubuntu 16.04.2 LTS</li>
-<li>Kernel Linux 4.8.0-41-generic</li>
+<li>Ubuntu 14.04 X64 LTS</li>
+<li>Kernel Linux 3.13.0-112-generic</li>
 </ul>
 <blockquote>
 <p>似乎 从16.04 开始以上已经全面使用<a href="http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html" target="_blank" rel="external">systemd</a>来启动管理守护进程，而不是像传统在init.d来启动。</p>
 </blockquote>
 <p>VPS 平台: Vultr<br>远程控制客户端: XShell 或者 Putty</p>
 <h3 id="远程连接-ubuntu"><a href="#远程连接-ubuntu" class="headerlink" title="远程连接 ubuntu"></a>远程连接 ubuntu</h3><p>略</p>
-<h3 id="Shadowsocks-安装"><a href="#Shadowsocks-安装" class="headerlink" title="Shadowsocks 安装"></a>Shadowsocks 安装</h3><p>安装pytyon 的pip管理程序，因为shadowsocks是由python写的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ apt-get install python-pip</div><div class="line"># 可能需要升级pip, 不然会失败</div><div class="line">$ pip install --upgrade pip</div></pre></td></tr></table></figure></p>
+<h3 id="Shadowsocks-安装"><a href="#Shadowsocks-安装" class="headerlink" title="Shadowsocks 安装"></a>Shadowsocks 安装</h3><p>安装pytyon 的pip管理程序，因为shadowsocks是由python写的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ apt-get install python-pip</div></pre></td></tr></table></figure></p>
 <p>安装shadowsocks程序 (方式一)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo pip install shadowsocks</div></pre></td></tr></table></figure>
 <p>安装shadowsocks程序 (方式二), pip 上的不是最新版本)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 安装yum</div><div class="line">sudo apt-install yum</div><div class="line"># 安装Python setuptools</div><div class="line">$ yum install m2crypto python-setuptools</div><div class="line"># 从github上安装shadowsocks</div><div class="line">$ pip install git+https://github.com/shadowsocks/shadowsocks.git@master</div></pre></td></tr></table></figure>
-<p>创建服务器配置文件(多端口)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi  /etc/shadowsocks.json</div></pre></td></tr></table></figure>
 <p>查看是否安装成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssserver</div></pre></td></tr></table></figure>
-<p>vi 的命令: 按 “i” 进入编辑模式，编辑后按 “esc” 退出编辑模式， 输入 “:wq” 保存退出vi<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;port_password&quot;: &#123;</div><div class="line">         &quot;443&quot;: &quot;password1&quot;,</div><div class="line">         &quot;8888&quot;: &quot;password2&quot;</div><div class="line">     &#125;,</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">    &quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>安装VIM<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ apt install vim</div></pre></td></tr></table></figure></p>
+<p>创建服务器配置文件(多端口)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim  /etc/shadowsocks.json</div></pre></td></tr></table></figure>
+<p>vim 的命令: 按 “i” 进入编辑模式，编辑后按 “esc” 退出编辑模式， 输入 “:wq” 保存退出vi<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;port_password&quot;: &#123;</div><div class="line">         &quot;443&quot;: &quot;password1&quot;,</div><div class="line">         &quot;8888&quot;: &quot;password2&quot;</div><div class="line">     &#125;,</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">    &quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>启动服务，后台运行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssserver -c /etc/shadowsocks.json -d start</div></pre></td></tr></table></figure>
-<h3 id="设置开机启动-针对16-10以下版本"><a href="#设置开机启动-针对16-10以下版本" class="headerlink" title="设置开机启动(针对16.10以下版本)"></a>设置开机启动(针对16.10以下版本)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi /etc/rc.local</div></pre></td></tr></table></figure>
+<p>此时可配置好客户端shadowsocks检测是否可以访问</p>
+<h3 id="设置开机启动-针对16-10以下版本"><a href="#设置开机启动-针对16-10以下版本" class="headerlink" title="设置开机启动(针对16.10以下版本)"></a>设置开机启动(针对16.10以下版本)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim /etc/rc.local</div></pre></td></tr></table></figure>
 <p>在exit 0以前插入开机执行命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssserver -c /etc/shadowsocks.json -d start</div></pre></td></tr></table></figure>
 <h3 id="ShadowSocks-操作命令"><a href="#ShadowSocks-操作命令" class="headerlink" title="ShadowSocks 操作命令"></a>ShadowSocks 操作命令</h3><p>查看日志</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo less /var/log/shadowsocks.log</div></pre></td></tr></table></figure>
+<h3 id="锐速加速"><a href="#锐速加速" class="headerlink" title="锐速加速"></a><a href="https://github.com/91yun/serverspeeder/" target="_blank" rel="external">锐速加速</a></h3><p>一定要使用锐速加速，使用和不使用的差别是：没使用时查看youtube 720P 看不了，速度只有区区6、70KB的速度，使用后瞬间7、800甚至1m，发挥出了带宽的最大威力！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -N –no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh &amp;&amp; bash serverspeeder-all.sh</div></pre></td></tr></table></figure></p>
+<h3 id="各种坑—列表"><a href="#各种坑—列表" class="headerlink" title="各种坑—列表"></a>各种坑—列表</h3><ul>
+<li>使用Ubuntu 16.10 开机启动方式不同，网卡不同，锐速内核不支持</li>
+<li>使用Ubuntu 16.4 锐速内核不支持</li>
+<li>内核更换不成功！更换内核当然是为了使用锐速，试过了很多在锐速列表中支持的内核，可惜都提示类似错误 “Unable to locate package linux-image-extra-3.13.0-24-generic”</li>
+<li>使用Ubuntu 14.4 rc.local 开机不执行</li>
+</ul>
 
 			
 		</div><!-- .entry-content -->
@@ -143,7 +152,7 @@
 <article class="hentry has-post-thumbnail">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj0s839ar0001ggtgvntwhl0q">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj10c46hu0001a4tg6i6q8mjm">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
