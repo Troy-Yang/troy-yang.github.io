@@ -1,3 +1,6 @@
+/*
+* Global Setting
+*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	margin: 0;
@@ -67,6 +70,79 @@ body {
     letter-spacing: -0.01em;
     word-spacing: 0.2em;
     line-height: 1.8em;
+}
+
+body {
+		font-size: 15px;
+		font-size: 1.5rem;
+		line-height: 1.6;
+	}
+
+p,
+address,
+pre,
+hr,
+ul,
+ol,
+dl,
+dd,
+table {
+	margin-bottom: 1.6em;
+}
+
+blockquote {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.6667;
+	margin-bottom: 1.6667em;
+	margin-left: -1.3333em;
+	padding-left: 1.1111em;
+}
+
+blockquote cite,
+blockquote small {
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+
+pre {
+	line-height: 1.2;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-password-form input[type="submit"],
+.widecolumn #submit,
+.widecolumn .mu_register input[type="submit"] {
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 0.7917em 1.5833em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	padding: 0.375em;
 }
 /*
 * Font awesome css
