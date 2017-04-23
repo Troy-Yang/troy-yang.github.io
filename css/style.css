@@ -548,6 +548,12 @@ a:focus {
     text-transform: uppercase;
 }
 
+.category-list-count, .tag-list-count, .archive-list-count {
+    padding-left: 5px;
+    color: #aaa;
+    font-size: 0.85em;
+}
+
 /* content */
 
 .hentry {
