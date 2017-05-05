@@ -53,20 +53,20 @@ ga('send', 'pageview');
 	<nav class="main-navigation">
                          <ul id="menu-demo-menu" class="nav-menu">
 						 
-							<li class="menu-item"><a href="/">首页</a></li>
+							<li class="menu-item"><a href="/">Home</a></li>
 						
-							<li class="menu-item"><a href="/archives">归档</a></li>
+							<li class="menu-item"><a href="/archives">Archives</a></li>
 						
-							<li class="menu-item"><a href="/about">关于</a></li>
+							<li class="menu-item"><a href="/about">AboutMe</a></li>
 						
                          </ul>
     </nav>
 	
 		
 <aside class="widget">
-		<h3 class="widget-title">归档</h3>		
+		<h3 class="widget-title">Archives</h3>		
 		<ul>
-			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">2</span></li></ul>
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">2</span></li></ul>
 		</ul>
 	</aside>
 
@@ -74,7 +74,7 @@ ga('send', 'pageview');
 	
 		
 <aside class="widget">
-		<h3 class="widget-title">最新文章</h3>		
+		<h3 class="widget-title">Recent Posts</h3>		
 		<ul>
 			
           <li>
@@ -96,7 +96,7 @@ ga('send', 'pageview');
 	
 		
   <aside class="widget">
-		<h3 class="widget-title">标签云</h3>
+		<h3 class="widget-title">Tag Cloud</h3>
         <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a>
     </aside>
 
@@ -109,7 +109,7 @@ ga('send', 'pageview');
 <article class="hentry has-post-thumbnail">
 		
 	
-      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj1w8s6es0002ewtgpjmksygp">
+      <a class="post-thumbnail" href="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" rel="gallery_cj2bxba630000cwtgzmjsjuu1">
         <img src="https://twentyfifteendemo.files.wordpress.com/2014/10/fly1.jpg?w=825&h=510&crop=1" itemprop="image">
       </a>
     
@@ -123,7 +123,7 @@ ga('send', 'pageview');
 		<div class="entry-content">
 			
 				<hr>
-<h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>最近想做个个人博客，看上了wordpress的<a href="https://wordpress.org/themes/twentyfifteen/" target="_blank" rel="external">twentyfifteen</a>模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的，于是就掉入了源码坑里，爬了一周才算勉强爬出来(请别要求一个后端转过来的同学太多)。所以爬出来后，觉得这个坑里还是有很多有营养的东西，毕竟是大公司，所有标准都是最新的，所以想总结下学到的东西，方便以后使用(持续更新中)</p>
+<h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>最近想做个个人博客，看上了wordpress的<a href="https://wordpress.org/themes/twentyfifteen/" target="_blank" rel="external">twentyfifteen</a>模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的，于是就掉入了源码坑里，爬了一周才算勉强爬出来，回过头来觉得这个坑里还是有很多有营养的东西，毕竟是大公司，所有标准都是最新的，所以想总结下学到的东西，方便以后使用(持续更新中)</p>
 <hr>
 <h2 id="Responsive-page-干货都写在最前面"><a href="#Responsive-page-干货都写在最前面" class="headerlink" title="Responsive page (干货都写在最前面)"></a>Responsive page (干货都写在最前面)</h2><p>在移动互联网时代，responsive的页面是必须的，我们知道css3里的media 可以帮我们实现不同设备尺寸的不同显示方式，所以设备尺寸的一个界定值就是我们的一个首要考虑问题，其他不多说，看看人家是如何定义的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 16.1 Mobile Large 620px</div><div class="line"> */</div><div class="line"> @media screen and (min-width: 38.75rem) &#123;</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> * 16.2 Tablet Small 740px</div><div class="line"> */</div><div class="line"></div><div class="line">@media screen and (min-width: 46.25rem)&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/**</div><div class="line"> * 16.3 Tablet Large 880px</div><div class="line"> */</div><div class="line"> @media screen and (min-width: 55rem)&#123;&#125;</div><div class="line"></div><div class="line">/**</div><div class="line"> * 16.4 Desktop Small 955px</div><div class="line"> */</div><div class="line"> </div><div class="line">@media screen and (min-width: 59.6875rem)&#123;</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> * 16.5 Desktop Medium 1100px</div><div class="line"> */</div><div class="line"> </div><div class="line">@media screen and (min-width: 68.75rem)&#123;</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> * 16.6 Desktop Large 1240px</div><div class="line"> */</div><div class="line">@media screen and (min-width: 77.5rem)&#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -149,11 +149,12 @@ ga('send', 'pageview');
 <li>rem的值是由html根节点的fontsize决定的</li>
 <li>em的值会被父元素的fontsize继承在计算(除非使用pixel显示的设置了当前元素的固定fontsize大小)</li>
 <li>rem的值会被在浏览器设置中设置的fontsize大小影响(除非在html根节点下使用了pixel去固定fontsize大小)</li>
-<li>有时为了换算方便，经常为body设置fontsize 为65</li>
+<li>有时为了换算方便，经常为body设置fontsize 为65%</li>
 </ul>
 <h3 id="如何选择"><a href="#如何选择" class="headerlink" title="如何选择"></a>如何选择</h3><ul>
 <li>使用rem: 在文本大小值的设置上使用</li>
-<li>使用rem: 在media queies中使用</li>
+<li>使用rem或者px: 在media queies中使用</li>
+<li>在和文本布局相关中，可使用em，比如某些文本的padding, margin 布局。防止因文本大小变化导致布局变得混乱</li>
 <li>在多列布局中，不要使用em或者rem来作为宽度，而使用 <code>%</code>代替</li>
 </ul>
 
