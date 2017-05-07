@@ -1,0 +1,3 @@
+[submodule "themes/hexo-theme-twentyfifteen-wordpress"]
+	path = themes/hexo-theme-twentyfifteen-wordpress
+	url = https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress.git
