@@ -5,7 +5,9 @@ node_js: stable
 install:
   - npm install
 
-
+before_install:
+  - git submodule update --init --remote --recursive
+  
 #before_script:
  # - npm install -g gulp
 
