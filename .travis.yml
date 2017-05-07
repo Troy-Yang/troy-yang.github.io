@@ -27,4 +27,4 @@ branches:
     - Source
 env:
  global:
-   - GH_REF: https://github.com/Troy-Yang/troy-yang.github.io.git
+   - GH_REF: github.com/Troy-Yang/troy-yang.github.io.git
