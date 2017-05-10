@@ -8,7 +8,7 @@ categories:
 - web前端
 - 笔记
 photos:
-- http://ommnrsgt0.bkt.clouddn.com/StylinWithCss.PNG
+- http://images.troyyang.com/2017-04-20-StylinWithCss.PNG
 ---
 ## 选择器
 - 子元素 > :  用于选择所有给定子元素，如 .food>li
