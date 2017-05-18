@@ -8,7 +8,7 @@ categories:
 - web前端
 - 笔记
 photos:
-- http://images.troyyang.com/2017-04-20-StylinWithCss.PNG
+- https://images.troyyang.com/2017-04-20-StylinWithCss.PNG
 ---
 ## 选择器
 - 子元素 > :  用于选择所有给定子元素，如 .food>li
@@ -88,7 +88,7 @@ aside {display:table-cell; width:210px; padding:10px;      background:#3f7ccf;}
 ```
 类似的用途如facebook的弹出框
 
-![image](http://www.w3cplus.com/sites/default/files/facebook-effects.jpg)
+![image](https://www.w3cplus.com/sites/default/files/facebook-effects.jpg)
 > 使用background-clip把元素背景控制在padding或content区域内，这样一来，只需一个非常div，我们在这个div上加上透明边框，并配合background-clip把背景超过padding或content的边缘外的背景色直接裁剪掉著作权归作者所有。
 商业转载请联系作者获得授权,非商业转载请注明出处。
 原文: http://www.w3cplus.com/content/css3-background-clip © w3cplus.com
