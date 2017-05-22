@@ -14,7 +14,7 @@ photos:
 ## 给Github上自定义域名加上HTTPS
 
 ### 写在开头
-随着Https越来越成为一种趋势，最近也给自己家博客弄上了高大上的https，主要是结合使用的cloudflare和七牛云（图片床）使用，关键是免费！所以想把这个过程记录下来，万一有人用得到呢。(也想抽空写写对Https的原理的理解，知道自己没其他人写得专业，全面，主要目的还是总结前段时间自己对Https的学习。)
+随着Https越来越成为一种趋势，最近也给自己家博客弄上了高大上的https，主要是结合使用的cloudflare和七牛云（图床）使用，关键是免费！所以想把这个过程记录下来，万一有人用得到呢。(还想抽空写写对Https的原理的理解，主要目的还是总结前段时间自己对Https的学习。)
 
 ### Https时代
 >According to Mozilla since January 2017 more than half of the Web traffic is encrypted. [wiki pedia](https://en.wikipedia.org/wiki/HTTPS) 
@@ -28,9 +28,9 @@ Google 今年更厉害，从1月份开始，所有没有用Https的网站会在C
 百度2015年实现全站HTTPS，并且Google和百度都收录Https的网站并且提高其搜索排名，国外大型互联网网站基本都使用https，所以，有人说2017年是一个Https年。那既然如此，高大上的Https我们普通老百姓玩得起吗？要知道，一般的Https证书动辄也是几千块一年！
 
 ### 天上掉下个证书
-没错，Cloudflare免费提供给证书，尽管你没有自己的服务器。Cloudflare是一个很值得信赖的DNS服务商和CDN提供商，提供各种安全防范解决方案，全世界各地都有他的节点，对于国内，百度选择和他一起合作就是个很好的栗子，所以不用担心国内解析速度。所以我准备把主站的证书使用Cloudflare提供的。
+没错，Cloudflare免费提供给证书，尽管你没有自己的服务器。Cloudflare是一个相当厉害的DNS服务商和CDN提供商，提供各种安全防范解决方案，全世界各地都有他的节点，对于国内，百度选择和他一起合作就是个很好的栗子，所以不用担心国内解析速度。所以我准备把主站的证书使用Cloudflare提供的。
 
-再一个就是七牛云，作为博客，不可能把图片全都放github上，所以最好还是要有自己的图片床，但是好多图片床都是不支持https的，好在七牛可以免费申请证书。所以这是第二个证书。
+再一个就是七牛云，作为博客，不可能把文章图片全都放github上，所以最好还是要有自己的图床，但是好多图片床都是不支持https的，好在七牛可以免费申请证书。所以这是第二个证书。
 
 ### 准备
 因为自己的博客站点暂时是托管到github上的，不是自己的服务器，所以并不能使用[Let's encrypt](https://letsencrypt.org/)在服务器端生成免费的证书，但好在一切都有cloudflare!
@@ -46,7 +46,7 @@ Cloudflare，主要用于域名解析，这是成功的关键！只有在他那�
 我们知道Github可以托管开源和私自项目(私有收费)，同样，功能强大的Github也可以提供静态页面站点，默认站点是 **https://[username].github.io** ，对应的站点代码是在reponsitory名为[username].github.io 下，如果没有，请创建自己的默认repository，可参考官方[说明](https://pages.github.com/)
 
 ![image](https://images.troyyang.com/2017-5-21-https-github-home.png)
-创建成功后，我们就成功的创建了自己的个人站点: https://troyyang.github.io，显然这还不是我们的最终目的。
+创建成功后，我们就成功的创建了自己的个人站点: https://troyyang.github.io 显然这还不是我们的最终目的。
 
 接下来，打开这个repository, 定位到repo setting，绑定自己的域名，绑定完成后，我们可以看到repo代码下新加了一个CNAME的文件，换句话说，其实我们也可以直接在repo中直接添加这个文件即可，而不需要在setting中去手动设置，这个在我们静态站点发布的时候非常有用，因为每次发布后提交都会删除原有的文件，所以我们就可以在生成的文件中默认加上这个文件。
 
@@ -59,7 +59,7 @@ troyyang.com
 
 ### 第二步：使用Cloudflare解析域名
 #### 修改默认DNS服务器
-在使用Cloudflare之前，我使用的是万网上的默认DNS服务器，也就是
+在使用Cloudflare之前，我使用的是万网（现在是阿里云）的默认DNS服务器，也就是
 ```
 dns9.hichina.com
 dns10.hichina.com
@@ -71,7 +71,7 @@ mary.ns.cloudflare.com
 ```
 个人觉得cloudflare作为DNS服务器特别快，修改了任何A记录或者其他记录会马上生效，不用再等待几个小时。
 #### 域名解析
-登录cloudflare, 将域名A记录指向Github服务器地址(同时也可指定CNAME记录去加上www)，绑定完成几分钟后访问troyyang.com或者www.troyyang.com就可以访问到我们Github上那个默认的repo静态站点。这个时候可以尝试去访问https://troyyang.com，理论上是不会成功的。
+登录cloudflare, 将域名A记录指向Github服务器地址(同时也可指定CNAME记录去加上www)，绑定完成几分钟后访问troyyang.com或者www.troyyang.com 就可以访问到我们Github上那个默认的repo静态站点。这个时候可以尝试去访问https://troyyang.com 理论上是不会成功的，哈哈。
 ![image](https://images.troyyang.com/2017-5-21-dns-cloudflare.png)
 
 ### 第三步：使用Cloudflare的 Universal SSL 证书
