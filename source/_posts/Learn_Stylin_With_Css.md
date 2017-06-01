@@ -43,13 +43,7 @@ aside {display:table-cell; width:210px; padding:10px;      background:#3f7ccf;}
 
 ## font
 - 常用颜色
-灰色(由深到浅):
-```
-#555
-#999
-#aaa
-#eee
-```
+[](https://images.troyyang.com/2017-6-1-regular-colors.PNG)
 
 ## background-clip
 借助[background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip/)可以实现类似外边距分割效果，如
