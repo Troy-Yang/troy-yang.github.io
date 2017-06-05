@@ -1,5 +1,5 @@
 ---
-title: 给Github上自定义域名加上HTTPS
+title: 给Github自定义域名加上HTTPS
 date: 2017-5-21 15:59:22
 author: Troy
 tags:
@@ -11,7 +11,6 @@ photos:
 - https://images.troyyang.com/2017-5-21-https.png
 ---
 ***
-## 给Github上自定义域名加上HTTPS
  
 ### 写在开头
 随着Https越来越成为一种趋势，最近也给自己家博客弄上了高大上的https，主要是结合使用的cloudflare和七牛云（图床）使用，关键是免费！所以想把这个过程记录下来，万一有人用得到呢。(还想抽空写写对Https的原理的理解，主要目的还是总结前段时间自己对Https的学习。)
