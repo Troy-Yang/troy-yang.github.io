@@ -1,5 +1,5 @@
 ---
-title: 遇到过CORS跨域请求中预检(preflight)的坑
+title: 踩过的坑--CORS跨域请求中预检(preflight)
 date: 2017-6-6 19:59:22
 author: Troy
 tags:
@@ -15,7 +15,6 @@ photos:
 - https://images.troyyang.com/2017-06-05-unauthorized-access.jpg
 ---
 ***
-## 遇到过CORS跨域请求中预检(preflight)的坑
 ### 开头
 这两天在使用NodeJS Express搭建REST服务器时遇到一个很典型的AJAX跨域包含自定义请求头问题（用于身份验证），在花了大半天时间排查问题后发现自己对CORS真正的理解还很不够，尤其是pre-flight。
 
