@@ -118,7 +118,7 @@ Cloudflare客服小哥在帮我加好Universal SSL证书后，回复我说你网
 解决方案就是，在Cloudflare上先删除所有A记录，CNAME记录，先添加上用作域名验证的Txt记录，等证书申请成功后（大约十几分钟），在恢复A记录，CNAME记录。这个是我Cloudflare上的相关解析最终样子
 ![image](https://images.troyyang.com/2017-5-21-cloudflare-dns-all.png)
 
-有一点需要说明的是在七牛上如果只使用http的话，只要一个月不超过20G流量，是不会收费的，但是https是不在免费额度里面的。
+有一点需要说明的是在七牛上如果只使用http的话，只要一个月不超过20G流量，是不会收费的，但是https是不在免费额度里面的。 
 
 
 
