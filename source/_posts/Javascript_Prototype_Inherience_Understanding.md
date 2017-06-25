@@ -3,11 +3,10 @@ title: Javascript中原型链继承的简单理解
 date: 2017-6-25 10:27:03
 author: Troy
 tags:
-- js
+- javascript
+- web前端
 categories:
 - 笔记
-- web前端
-- javascript
 photos:
 excerpt: 
 ---
