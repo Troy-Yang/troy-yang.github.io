@@ -101,7 +101,7 @@ User.prototype.getUserById = function (id, successCallback, errorCallback) {
 
 无数次的尝试，先是怀疑客户端ajax调用没对，甚至搬用最原生的ajax方法， 也怀疑过是服务端Jwt passport没写对，最后比较http请求头的时候发现了一些问题。
 
-PostMan在服务器端得到的request是这样的：
+使用Post man在node服务器端得到的request是这样的：
 
 ![image](https://images.troyyang.com/2017-06-05-request-header-postman.PNG)
 
@@ -118,7 +118,7 @@ PostMan在服务器端得到的request是这样的：
 回到代码中，不巧，每次服务端捕捉到的就是这个preflight请求，然后做next，其中就包括Jwt 中间件，而因为请求头中没有Authorization这个header，Jwt就返回了401，而这个过程是在passport的JWT中自动检测的，自己写的JWT验证部分甚至都没有执行到！
 
 ### 解决办法
-看了[express cors](https://github.com/expressjs/cors/blob/master/lib/index.js)源码后，其实做个简单的过滤就好啦！！！
+看了[express cors](https://github.com/expressjs/cors/blob/master/lib/index.js)源码后，其实把请求类型OPTIONS做个简单的过滤就好啦！！！
 
 ```
 // Enable CORS from client-side
