@@ -75,6 +75,13 @@ clean_css:
   exclude: 
     - '*.min.css'
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
