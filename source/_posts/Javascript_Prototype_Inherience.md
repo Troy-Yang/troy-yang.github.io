@@ -17,7 +17,7 @@ excerpt: 首先提个问题，都知道JS中的继承方式演变了很多种，
 创建的子类将继承超类的**所有属性和方法**，包括构造函数及方法的实现。记住，所有属性和方法都是公用的，因此子类可直接访问这些方法。子类还可添加超类中没有的新属性和方法，也可以覆盖超类的属性和方法。
 
 ## 完美继承
-以前在开发中，使用继承用得最频繁的继承方式莫过于[MDN](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/Inheritance)上所推荐的，据说也是最完美的基础，也就是下面这种：
+以前在开发中，使用继承用得最频繁的继承方式莫过于[MDN](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/Inheritance)上所推荐的，据说也是最完美的继承，也就是下面这种：
 ```
 function Person(first, last, age, gender, interests) {
   this.name = {
@@ -41,7 +41,7 @@ Teacher.prototype = Object.create(Person.prototype);
 Teacher.prototype.constructor = Teacher;
 ```
 
-毫无疑问，这种继承方式是基于原型链的，而并非其他复制方式的继承，而最新ES6中的class的extends也其实就是上面的一种语法糖，所以搞清楚其中的原理至关重要。上面涉及到的东西对于新手而言挺多了，关于this的部分我希望自己再在整理单独一篇文章，而且其实以前使用的时候并没有真正理解所有的地方。以上核心的地方有三个。
+毫无疑问，这种继承方式是基于原型链的，而并非其他复制方式的继承，而最新ES6 class中的extends也其实就是上面的一种语法糖，所以搞清楚其中的原理至关重要。上面涉及到的东西对于新手而言挺多了，关于this的部分我希望自己再在整理单独一篇文章，而且其实以前使用的时候并没有真正理解所有的地方。以上核心的地方有三个。
 - Person.call 
 - Teacher.prototype = Object.create(Person.prototype);
 - Teacher.prototype.constructor = Teacher;
