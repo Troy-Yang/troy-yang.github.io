@@ -7,6 +7,7 @@ tags:
 - web
 categories:
 - 笔记
+excerpt: Cloudflare生成证书key pair 的pem 格式文件，更名为.crt和.key。文件名和扩展名只是为了提供便利，对功能没有影响；你可以将证书命名为 cert.crt、cert.pem 或 任何其他文件名...
 ---
 ***
 
