@@ -13,7 +13,7 @@ categories:
 - NodeJs
 - 笔记
 photos:
-- https://images.troyyang.com/2017-06-05-unauthorized-access.jpg
+- https://ommnrsgt0.bkt.clouddn.com/2017-06-05-unauthorized-access.jpg
 ---
 ***
 ### 开头
@@ -62,7 +62,7 @@ userRoutes.delete('/:id', user.deleteUser);
 ```
 
 上面的代码看起来还是那么多清晰，在PostMan 测试中附带jwt也是没有任何的问题，成功返回。
-![image](https://images.troyyang.com/2017-06-05-CORS-Postman.PNG)
+![image](https://ommnrsgt0.bkt.clouddn.com/2017-06-05-CORS-Postman.PNG)
 
 接下来是客户端(jquery ajax):
 
@@ -97,16 +97,16 @@ User.prototype.getUserById = function (id, successCallback, errorCallback) {
 
 ### 永远的401
 然后， 问题出现了，尽管参数是如何的对，Chrome console下总是返回让人咬牙切齿的大红色401，甚至断点都没有进入到passport的Jwt middleware下。
-![image](https://images.troyyang.com/2017-06-05-401-error.PNG)
+![image](https://ommnrsgt0.bkt.clouddn.com/2017-06-05-401-error.PNG)
 
 无数次的尝试，先是怀疑客户端ajax调用没对，甚至搬用最原生的ajax方法， 也怀疑过是服务端Jwt passport没写对，最后比较http请求头的时候发现了一些问题。
 
 使用Post man在node服务器端得到的request是这样的：
 
-![image](https://images.troyyang.com/2017-06-05-request-header-postman.PNG)
+![image](https://ommnrsgt0.bkt.clouddn.com/2017-06-05-request-header-postman.PNG)
 
 通过浏览器ajax请求是这样的：
-![image](https://images.troyyang.com/2017-06-05-request-header-browser.PNG)
+![image](https://ommnrsgt0.bkt.clouddn.com/2017-06-05-request-header-browser.PNG)
 
 有人给我把请求头信息更改了！Authorization不见了，甚至连req.method都变成了OPTIONS，而不是GET。
 

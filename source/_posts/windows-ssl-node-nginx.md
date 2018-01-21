@@ -157,7 +157,7 @@ server {
     }
 ```
 访问https://localhost就应该可以看到https安全提醒，选择继续就可以得到如下结果
-![image](https://images.troyyang.com/2017-11-7-nginx-ssl.PNG)
+![image](https://ommnrsgt0.bkt.clouddn.com/2017-11-7-nginx-ssl.PNG)
 
 ## 反向代理Node 服务
 使用express创建个最简单node服务器，端口为3000
