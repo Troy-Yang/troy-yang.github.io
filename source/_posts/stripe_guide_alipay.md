@@ -197,3 +197,6 @@ function processStripeResponse(source) {
 - currency 必须是Stripe账号所在地货币，也就是绑定的银行卡所在地，因为Jason是英国人，所以必须使用gbp（这里愚蠢如我的犯了一个常识错误，一直以为英国也是欧盟的，所以使用eur，结果怎么也不对，直接哭晕在厕所）
 - return_url指向的是当用户重定向到我们常见的支付宝支付页面后，跳转回支付完成的页面，在这个返回页面中，因为支付宝是同步完成支付的，所以我们可以去查询charge.succeeded的状态来判定是否用户支付是否完成。
 
+
+当一切OK，点击支付按钮，就会跳转到支付宝支付页面(其他支持的三方平台也可以)，如下：
+![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-23-alipay-success.png)
