@@ -1,5 +1,5 @@
 ---
-title: Stripe使用指南--国际支付（含支付宝）
+title: Stripe开发使用指南--国际支付（含支付宝）
 date: 2018-1-21
 author: Troy
 tags:
