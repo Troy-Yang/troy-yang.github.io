@@ -52,13 +52,13 @@ categories:
 ```
 就这么几行代码，我们就已经实现了客户端所有事：
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-13-stripe-checkout.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-13-stripe-checkout.png)
 
 真的是超级简单，但是这种方式是基于信用卡支付的界面，已经可以满足一半的支付方式，对于其他的三方支付，比如3D secure， 支付宝，微信，甚至比特币，Stripe为我们提供了其他方式，等下我就使用支付宝来举例。
 
 ### 注册 Stripe 账号
 和注册支付宝账号一个道理，首先注册账号，然后绑定自己银行卡，BUT, 就像前面提到的，不支持中国，所以就算注册成功，也没法激活，也就没法收款。
-![](https://ommnrsgt0.bkt.clouddn.com/2018-1-13-stripe-support-countries.PNG)
+![](http://ommnrsgt0.bkt.clouddn.com/2018-1-13-stripe-support-countries.PNG)
 
 对于中国商家怎么办呢，我能想到的就只有这几个办法：
 - 自己去支持国家去办理张银行卡
@@ -70,11 +70,11 @@ categories:
 ### 两个阶段
 
 Stripe有两种模式，一个是测试模式(Test Mode)，一个是生产模式(Live Mode)，测试模式下产生的金钱交易都只用于测试，当所有测试通过后即可切换为Live模式。唯一的不同就是**Publishable key** 和 **Secret key**， 一会我们会用到这两个值。
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-13-stripe-test-mode.PNG)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-13-stripe-test-mode.PNG)
 
 ### 交易流程
 Stripe有几个概念用于整个交易阶段和状态：
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-18-workflow.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-18-workflow.png)
 
 #### 创建 Source
 
@@ -89,17 +89,17 @@ Stripe有几个概念用于整个交易阶段和状态：
 
 #### 使用 webhooks
 Webhooks 里提供了几十种状态，所有这些状态都会注册到Stripe里一个叫webhooks事件钩子的地方，我们可以指定不同事件的触发时，转发数据到某个我们自己搭建好的Web Api上。（下图是我们的服务器end point, 因为我们没有用到服务器，使用的是亚马逊lambda做一个Serverless）
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-18-web-hooks.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-18-web-hooks.png)
 
 ## 举个支付宝的栗子
 
 ### 服务端 （Serverless）
 以AWS的Lambda + API gateway为例， 其中，前者是用来定义API， 后者是做路由。
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-18-lambda.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-18-lambda.png)
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-18-lambda-source-chargeable.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-18-lambda-source-chargeable.png)
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-18-lambda-variable.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-18-lambda-variable.png)
 
 创建Charge代码：
 ```
@@ -156,7 +156,7 @@ exports.handler = (event, context, callback) => {
 ```
 Unrecognized request URL (POST: /v1/alipay/send_sms). Please see https://stripe.com/docs or we can help at https://support.stripe.com/.
 ```
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-21-alipay-checkout.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-21-alipay-checkout.png)
 
 发邮件给Stripe support team得到的结果是为了以后的扩展，Stripe不再提供alipay的checkout方式， 无奈，只得使用下面的方式。
 #### Stripe.js & Elements
@@ -190,7 +190,7 @@ function processStripeResponse(source) {
     window.location.href = source.redirect.url;
 }
 ```
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-21-alipay-console.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-21-alipay-console.png)
 
 
 这里需要注意几点：
@@ -199,4 +199,4 @@ function processStripeResponse(source) {
 
 
 当一切OK，点击支付按钮，就会跳转到支付宝支付页面(其他支持的三方平台也可以)，如下：
-![image](https://ommnrsgt0.bkt.clouddn.com/2018-1-23-alipay-success.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2018-1-23-alipay-success.png)

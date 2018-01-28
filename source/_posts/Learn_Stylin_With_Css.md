@@ -8,7 +8,7 @@ categories:
 - web前端
 - 笔记
 photos:
-- https://ommnrsgt0.bkt.clouddn.com/2017-04-20-StylinWithCss.PNG
+- http://ommnrsgt0.bkt.clouddn.com/2017-04-20-StylinWithCss.PNG
 ---
 ## 选择器
 - 子元素 > :  用于选择所有给定子元素，如 .food>li
@@ -43,7 +43,7 @@ aside {display:table-cell; width:210px; padding:10px;      background:#3f7ccf;}
 
 ## font
 - 常用颜色
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-6-1-regular-colors.PNG)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-6-1-regular-colors.PNG)
 
 ## background-clip
 借助[background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip/)可以实现类似外边距分割效果，如

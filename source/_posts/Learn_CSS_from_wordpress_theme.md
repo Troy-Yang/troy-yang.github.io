@@ -60,7 +60,7 @@ excerpt: 最近想做个个人博客，看上了wordpress的[twentyfifteen](http
 其中在mock的过程中发现几个tips
 * 上面只有min-width，没有设置max-width，这是一个灵活的设计，没有max-width就说明他可以从最小满足条件的media开始，只要满足条件，都会被执行到，而我们需要做的就是把共有的部分写在最小尺寸里，或者放最外面，然后在需要更改的部分属性在在需要的尺寸中更改。简单举个栗子：
 有个导航栏，需要在移动设备的时候隐藏，在桌面浏览器中显示所有，那我们可以这样:
-![](https://ommnrsgt0.bkt.clouddn.com/2017-03-03-css-media-query.jpg)
+![](http://ommnrsgt0.bkt.clouddn.com/2017-03-03-css-media-query.jpg)
 
 ***
 

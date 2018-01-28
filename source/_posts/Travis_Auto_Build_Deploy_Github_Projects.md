@@ -9,7 +9,7 @@ tags:
 categories:
 - 笔记
 photos:
-- https://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-logo.png
+- http://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-logo.png
 excerpt: 在使用Hexo写完一篇博客后，都需要手动在本地编译，并生成静态文件，最后在上传至github服务器上才能发布，繁琐步骤姑且不说，万一哪天换了台电脑，没有Hexo环境的时候如何写博客呢？要是直接在github源码里写好文章后能自动编译发布就好了，好在github的好基友travis可以轻松帮我们同时实现这种CI,CD。
 ---
 在使用Hexo写完一篇博客后，都需要手动在本地编译，并生成静态文件，最后在上传至github服务器上才能发布，繁琐步骤姑且不说，万一哪天换了台电脑，没有Hexo环境的时候如何写博客呢又或者修改博客Bug？要是直接在github源码里写好文章后能自动编译发布就好了，好在github的好基友travis可以轻松帮我们同时实现这种持续集成, 持续部署。
@@ -32,20 +32,20 @@ excerpt: 在使用Hexo写完一篇博客后，都需要手动在本地编译，�
 
 在description里输入任意token 名字，比如Travis-CI，并勾选上下面所有复选框。这个时候会生成token，请务必记住，因为他只会出现一次，否则需要重新生成(这个就是)。
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-6-24-github-create-token.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-6-24-github-create-token.png)
 
 
 ## 第二步，添加github上的项目至travis上
 使用github账号登录[https://travis-ci.org/](https://travis-ci.org/)，这个时候你会看到自己所有github上的项目，选择需要做自动集成的项目troy-yang.github.io
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-create.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-create.png)
 
 ## 第三步, 添加access token到travis上
 第一步和第三步的目的是保护你的access token除了travis和你自己以外别人都看不到，你肯定不希望把access token放在.travis.yml文件里让大家都看到吧。
 
 在travis上进入troy-yang.github.io 后，在右上角more options里找到setting，打开后，勾选 [Build only if .travis.yml is present] 并且 在Environment Variables中添加github上的access token。
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-setting.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-setting.png)
 
 ## 第四步,　添加编写.travis.yml
 在项目源码根目录(我的是troy-yang.github.io source分支), 添加.travis.yml文件，内容如下:
@@ -91,6 +91,6 @@ env:
 ## 第五步，测试
 让我们试试直接浏览器登录github，然后在troy-yang.github.io.git下的source分支下提交任何文件修改。在登录Travis，此时你可以看到一旦提交，Travis这边马上开始执行流程，看起来非常赏心悦目。
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-build.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-6-24-travis-ci-build.png)
 
 从此发布文件，修改博客bug是如此容易！博客如此，其他开源项目同样如此。

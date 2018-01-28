@@ -8,7 +8,7 @@ tags:
 categories:
 - 数据库
 photos:
-- https://ommnrsgt0.bkt.clouddn.com/2017-09-01-mongo-logo.png
+- http://ommnrsgt0.bkt.clouddn.com/2017-09-01-mongo-logo.png
 excerpt: 最近项目中用到了MongoDB，顺便就写了安装说明文档以备以后查看，包括创建高可靠性的副本集replica-set，远程连接，密码登录等配置。
 ---
 

@@ -8,7 +8,7 @@ tags:
 categories:
 - security
 photos: 
-- https://ommnrsgt0.bkt.clouddn.com/2017-5-21-https.png
+- http://ommnrsgt0.bkt.clouddn.com/2017-5-21-https.png
 ---
 ***
  
@@ -44,12 +44,12 @@ Cloudflare，主要用于域名解析，这是成功的关键！只有在他那�
 ### 开始第一步: Github 自定义域名
 我们知道Github可以托管开源和私自项目(私有收费)，同样，功能强大的Github也可以提供静态页面站点，默认站点是 **https://[username].github.io** ，对应的站点代码是在reponsitory名为[username].github.io 下，如果没有，请创建自己的默认repository，可参考官方[说明](https://pages.github.com/)
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-https-github-home.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-https-github-home.png)
 创建成功后，我们就成功的创建了自己的个人站点: https://troyyang.github.io 显然这还不是我们的最终目的。
 
 接下来，打开这个repository, 定位到repo setting，绑定自己的域名，绑定完成后，我们可以看到repo代码下新加了一个CNAME的文件，换句话说，其实我们也可以直接在repo中直接添加这个文件即可，而不需要在setting中去手动设置，这个在我们静态站点发布的时候非常有用，因为每次发布后提交都会删除原有的文件，所以我们就可以在生成的文件中默认加上这个文件。
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-https-github-home-customdomain.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-https-github-home-customdomain.png)
 
 CNAME
 ```
@@ -71,7 +71,7 @@ mary.ns.cloudflare.com
 个人觉得cloudflare作为DNS服务器特别快，修改了任何A记录或者其他记录会马上生效，不用再等待几个小时。
 #### 域名解析
 登录cloudflare, 将域名A记录指向Github服务器地址(同时也可指定CNAME记录去加上www)，绑定完成几分钟后访问troyyang.com或者www.troyyang.com 就可以访问到我们Github上那个默认的repo静态站点。这个时候可以尝试去访问https://troyyang.com 理论上是不会成功的，哈哈。
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-dns-cloudflare.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-dns-cloudflare.png)
 
 ### 第三步：使用Cloudflare的 Universal SSL 证书
 在Cloudflare管理页面，导航到Crypto，我们会看到SSL在Cloudflare上使用证书有三种方式: Flexible、Full、Full Strict，
@@ -84,21 +84,21 @@ mary.ns.cloudflare.com
 1. 访客可以在浏览器地址栏上看到加密的图标。（证书签名来自自己申请的CA）
 
 三种模式如图
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-ssl.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-ssl.png)
 
 当然，我们选择Flexible，选择后我们还需要在下面的Edge Certificates栏目中新增Universal SSL 证书（当初以为选择Flexible后就等待24小时激活就完了，可几天过去了状态一直处于initilizing certification, 问了客服后，客服帮我加上这个Universal SSL证书就好了，给他们客服赞一个）
 
 在Edge Certificates中，点击Order SSL Certificate按钮，弹出几种证书，我们当然选择免费的那个, 然后填写证书服务的域名troyyang.com和*.troyyang.com.
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-universal-ssl.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-universal-ssl.png)
 
 一步一步完成后就等待了，一般情况不会超过24小时就会生效，激活后就如下图（我个人选的是Full），然后就可以尽情的访问 https://troyyang.com
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-universal-ssl-success.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-universal-ssl-success.png)
 
 如何你查看域名证书，细心的你除了看到Cloudflare签发的证书外，还有证书有效期只有半年，这个不用担心过期，客服小哥回复说他们会在快过期时自动延期的。
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-ssl-troyyang.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-ssl-troyyang.png)
 
 ### 七牛图床Https支持
 Cloudflare客服小哥在帮我加好Universal SSL证书后，回复我说你网站还包括非https的内容也就导致所谓的mixed-content 问题，也就导致我当时在地址栏还看不到那个https图标，这个是我能想到的，因为我知道我的图片还都不是https，因为图片存放在七牛云上的，赶紧回去看看七牛是怎么支持https，于是在踩了无数坑过后终于让图片支持上了。
@@ -113,10 +113,10 @@ Cloudflare客服小哥在帮我加好Universal SSL证书后，回复我说你网
 
 在七牛管理页面，在证书页面选择购买证书，然后选择TrustAsia的DV限免性，最关键的就是DNS的TXT验证了（[验证指南](https://developer.qiniu.com/fusion/manual/1703/qiniu-free-certificate)），我也是在使用了三次申请后才弄明白申请失败原因: Github上默认会解析出两个IP地址
 
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-qiniu-dig.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-qiniu-dig.png)
 
 解决方案就是，在Cloudflare上先删除所有A记录，CNAME记录，先添加上用作域名验证的Txt记录，等证书申请成功后（大约十几分钟），在恢复A记录，CNAME记录。这个是我Cloudflare上的相关解析最终样子
-![image](https://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-dns-all.png)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-5-21-cloudflare-dns-all.png)
 
 有一点需要说明的是在七牛上如果只使用http的话，只要一个月不超过20G流量，是不会收费的，但是https是不在免费额度里面的。 
 
