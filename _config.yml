@@ -87,6 +87,10 @@ sitemap:
   tag: false
   category: false
 
+search:
+  path: search.json
+  field: post
+
 lazyload:
   enable: true 
   onlypost: false
