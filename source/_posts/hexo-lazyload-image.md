@@ -7,7 +7,7 @@ tags:
 categories:
 - web前端
 photos:
-- http://ommnrsgt0.bkt.clouddn.com/2017-08-06-hexo.png
+- https://images.troyyang.com/2017-08-06-hexo.png
 excerpt: 最近在看Google Chrome新出的一个API是无意间想到了对图片的懒加载，后来想想自己的网站还不支持呢，索性花了些时间让网站给支持上了，并发现Hexo上还没有一个懒加载的插件，又倒腾着写了个hexo的插件hexo-lazyload-image，并发布到NPM上供大家使用，从这几天下载数来看看来大家还是很有这个需求 :)
 ---
 

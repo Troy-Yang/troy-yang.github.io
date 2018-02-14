@@ -21,7 +21,7 @@ categories:
 
 ### 第二步：连接到路由器
 升级完成后，使用在小米官网给出当前小米账号的root账号密码便可以登录路由器系统XIAO QIANG, 实质也是linux系统的一个distribution，查询后得知事实上生活中很多小的硬件设备都是搭载的linux系统，因为其开销实在太小啦
-![image]http://ommnrsgt0.bkt.clouddn.com/2017-04-15-LoginXiaoMiRouter.PNG)
+![image]https://images.troyyang.com/2017-04-15-LoginXiaoMiRouter.PNG)
 
 查询当前路由器系统信息
 

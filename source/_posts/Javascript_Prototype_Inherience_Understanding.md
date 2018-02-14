@@ -16,7 +16,7 @@ categories:
 ### 实例对象的各种属性
 先看看最简单的内置对象string类型的各种构造函数（构造器）和原型，a一定是实例化的对象，而不是构造函数(构造函数一般是大写)。
 
-![image](http://ommnrsgt0.bkt.clouddn.com/2017-6-25-js-inherence.png)
+![image](https://images.troyyang.com/2017-6-25-js-inherence.png)
 
 从上面我们可以很直观的看到很多东西：
 - a是由String构造函数(constructor)创建的。
