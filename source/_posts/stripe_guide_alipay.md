@@ -10,7 +10,8 @@ categories:
 - Web
 ---
 ***
-前段时间，因为Jason让我帮忙把Stripe支付集成到他个人网站上去，让我有机会接触到支付系统开发，同时也因为苦于没有找到太多中文方面相关文档介绍，所以做个总结，也方便以后有需要的同学。
+前段时间，因为Jason让我帮忙把Stripe支付集成到他个人网站上去，让我有机会接触到支付系统开发，同时也因为苦于没有找到太多中文方面相关文档介绍，所以做个总结，也方便以后有需要的同学。   
+(更新) 发现好些同学也在咨询如何集成微信支付，其实也是非常简单，所以新增了最后微信的实现，见最后
 
 ### 关于Stripe支付
 
@@ -200,3 +201,22 @@ function processStripeResponse(source) {
 
 当一切OK，点击支付按钮，就会跳转到支付宝支付页面(其他支持的三方平台也可以)，如下：
 ![image](https://images.troyyang.com/2018-1-23-alipay-success.png)
+
+### 微信实现
+其实也非常的简单，只需要将上一步的type改为wechat，同时返回source中的source.wechat.qr_code_url转为二维码就好了
+```
+var wechatCallback = function (source) {
+    generateQRCode(source.wechat.qr_code_url);
+}
+function generateQRCode(value) {
+    var qrEle = document.getElementById("qrcode");
+    var qrcode = new QRCode(qrEle, {
+        width: 100,
+        height: 100
+    });
+    qrcode.makeCode(value);
+    qrEle.style.display = 'inline-block';
+}
+```
+二维码出来后， 扫码就会得到如下结果   
+![image](https://images.troyyang.com/2018-12-16-wechat-success.jpeg)
