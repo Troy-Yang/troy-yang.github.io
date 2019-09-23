@@ -109,17 +109,15 @@ $ ssserver -c /etc/shadowsocks.json -d start
 $ sudo less /var/log/shadowsocks.log
 ```
 
-### [锐速加速](https://github.com/91yun/serverspeeder/)
-一定要使用锐速加速，使用和不使用的差别是：没使用时查看youtube 720P 看不了，速度只有区区6、70KB的速度，使用后瞬间7、800甚至1m，发挥出了带宽的最大威力！
+### 防火墙端口开放
 ```
-wget -N –no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+sudo iptables -I INPUT -p tcp --dport 8888 -j ACCEPT
 ```
 
-### 各种坑---列表
-- 使用Ubuntu 16.10 开机启动方式不同，网卡不同，锐速内核不支持
-- 使用Ubuntu 16.4 锐速内核不支持
-- 内核更换不成功！更换内核当然是为了使用锐速，试过了很多在锐速列表中支持的内核，可惜都提示类似错误 "Unable to locate package linux-image-extra-3.13.0-24-generic"
-- 使用Ubuntu 14.4 rc.local 开机不执行
+### BBR 加速
+一定要使用加速，使用和不使用的差别是：没使用时查看youtube 720P 看不了，速度只有区区6、70KB的速度，使用后瞬间7、800甚至1m，发挥出了带宽的最大威力！
+https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu
+
 
 
 
