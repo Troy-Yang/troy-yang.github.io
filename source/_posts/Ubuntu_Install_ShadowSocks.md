@@ -54,17 +54,13 @@ $ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 ```
 $ ssserver
-```
-
-安装VIM
-```
-$ apt install vim
+$ whereis ssserver
 ```
 
 创建服务器配置文件(多端口)
 
 ```
-$ vim  /etc/shadowsocks.json
+$ vi  /etc/shadowsocks.json
 ```
 
 
@@ -112,6 +108,16 @@ $ sudo less /var/log/shadowsocks.log
 ### 防火墙端口开放
 ```
 sudo iptables -I INPUT -p tcp --dport 8888 -j ACCEPT
+```
+为防止reboot后iptable重置，需要下面命令
+```
+sudo apt-get install iptables-persistent
+
+sudo /etc/init.d/iptables-persistent save 
+sudo /etc/init.d/iptables-persistent reload
+##或者
+sudo netfilter-persistent save
+sudo netfilter-persistent reload
 ```
 
 ### BBR 加速
