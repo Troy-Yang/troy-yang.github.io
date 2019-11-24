@@ -95,6 +95,34 @@ index.html
 
 但是我依旧需要填写Netlify的部署，因为Netlify会自动帮我创建域名为troyyang.netlify.com的网站，任何我Source分支上的修改也会触发这个网站的自动部署
 
-
-
 ![](/images/uploads/2019-11-24-create-netlify-website.png)
+
+#### 开启Netlify Identity 和 Git Gateway
+
+在Setting 的 Identity选项下：
+
+1. Enable Identity service
+2. External providers 新增github
+3. Enable Git Gateway
+
+### 发布测试
+打开 https://troyyang.netlify.com/admin/ 然后使用github Oauth登录即可看到：
+
+![](/images/uploads/2019-11-24-netlify-home.png)
+
+![](/images/uploads/2019-11-24-netlify-create.png)
+
+新增文章后， 你会发现github 上的source目录下的_post 目录的markdown 文件新增了，如果上传了图片，也会看到source目录下多了images/upload目录，同时https://troyyang.netlify.com 和 https://troyyang.com 下也自动发布了新的文章, 两者都是因为Source分支里新增了文件导致的自动部署。
+
+![](/images/uploads/2019-11-24-netlify-file-structure.png)
+![](/images/uploads/2019-11-24-troyyang.png)
+![](/images/uploads/2019-11-24-netlify.png)
+
+### 问题
+当我尝试打开 https://troyyang.com/admin/ 使用github Oauth登录时，结果报错，而https://troyyang.netlify.com/admin/则没有：
+```
+Failed to load settings from /.netlify/identity
+```
+![](/images/uploads/2019-11-24-netlify-admin-error.png)
+
+我怀疑是因为https://troyyang.com是托管在github上，而不是netlify上导致的。
