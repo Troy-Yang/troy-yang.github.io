@@ -23,6 +23,7 @@ comments: true
 
 支持列表：
 Jekyll, GitBook,Hugo, Gatsby, Nuxt, Next, Gridsome, Zola,Hexo, Middleman, Jigsaw,Spike ,Wyam,Pelican,VuePress,Elmstatic,11ty,preact-cli
+![](/images/uploads/2019-11-24-netlifycms-list.png)
 
 ### 为什么使用它
 
@@ -126,3 +127,6 @@ Failed to load settings from /.netlify/identity
 ![](/images/uploads/2019-11-24-netlify-admin-error.png)
 
 我怀疑是因为https://troyyang.com是托管在github上，而不是netlify上导致的。
+
+
+Enjoy!
