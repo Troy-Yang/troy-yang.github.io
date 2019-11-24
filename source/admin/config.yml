@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: Source
 
+publish_mode: editorial_workflow
+
 # This line should *not* be indented
 media_folder: "source/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
