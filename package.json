@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.9.0"
   },
   "scripts": {
-    "start": "hexo clear & hexo g & hexo server"
+    "start": "hexo clear & hexo g & hexo server",
+    "build": "hexo clear & hexo g"
   },
   "dependencies": {
     "clean-css": "^4.1.7",
