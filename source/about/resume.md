@@ -18,7 +18,7 @@ LinkedIn: https://www.linkedin.com/in/troy-yang/
 ### 求职意向：Web 开发
 
 ### 技术技能
-- HTML/HTML5、CSS/CSS3、JS、ES6
+- HTML/HTML5、CSS/CSS3、JS、ES6、React、Webpack、Gulp、Grunt
 - Jquery、Bootstrap、Mocha
 - C#、NodeJs、RestFull API、GIS
 - Sql Server、MongoDB、RabbitMQ
@@ -29,8 +29,8 @@ LinkedIn: https://www.linkedin.com/in/troy-yang/
 - Linux
 
 ### 自我评价
-- 5年坚实的全栈编程经验及技巧，对前后端项目搭建有丰富经验，后端语言侧重于C#，NodeJs语言
-- 3年Web前端开发经验，基础扎实，如JS核心基础、http、CSS等
+- 坚实的全栈编程经验及技巧，对前后端项目搭建有丰富经验，后端语言侧重于C#，NodeJs语言
+- 丰富的Web前端开发经验，基础扎实，如JS核心基础、http、CSS等，熟悉主流框架React等
 - 对面向对象开发(OOP), 组件API 设计有着很好的理解和实践
 - 具备敏捷开发实践经验(Agile)
 - 优秀的海外工作经历，在和海外同事和客户沟通交流有一定经验积累
@@ -39,17 +39,34 @@ LinkedIn: https://www.linkedin.com/in/troy-yang/
 - 优秀学习和解决问题能力、及各种性能优化问题定位
 
 ### 工作经历
-2012/3--至今（6年）：(ThinkGeo)成都思宙科技有限公司    软件工程师
+2018/6--至今 ：（Active Network)活跃网络   高级前端开发工程师
+- 负责Swim项目组前端小组包括成都和尼泊尔团队在内的日常开发工作
+- 升级和维护遗留项目，构建前端工程化及添加自动测试规范化
+- 独立开发 build npm包，用于优化和替换公司原有基于Ant build流程，提高前端开发效率的同时，为困扰多年的前后端分离做出最重要的一步
+- 在主要遗留产品中引入和搭建React技术栈，制定相关规范，使得新功能全部以React开发
+- 参与公司内部前端Team，积极参与和分享每周内部分享会，参与开发数个公司内部npm packages
+2018/4--2018/6 (2月)：聚美优品  前端开发工程师
+- 参与开发微信H5页面，微信小程序
+2012/3--2018/3（6年）：(ThinkGeo)成都思宙科技有限公司    软件工程师
 - 进入公司产品开发组，负责公司产品线维护，bug修复，新功能开发，发布测试，并快速成为公司产品核心开发人员。
 - 负责公司产品技术支持：收集和评估所有从客户发来的技术问题，分发给小组相应成员处理；在公司技术论坛回复来自全球客户的技术问题，Google "site:thinkgeo.com troy" 可以浏览部分回复内容。
 - 进入公司Professional Service外包项目组并成为核心成员，与美国同事以及甲方开发人员协同工作。
 - 负责部分面试及培训事物。
 - 两次赴美国德州总部合作开发。
 
-
 ### 公司项目经验
+#### 2018/6--至今 ： Active Network Swimming Manager & Protal
+[Swimming Manager](https://www.activenetwork.com/swim) & Protal 是活跃公司swimming 产品部两大主要Web产品，已经开发维护超过7年，主要用于北美游泳各大俱乐部，泳联以及游泳赛事使用的大型Web SPA系统。也是基于Ant来build的jsp单页面系统，主要前端技术基于RequireJS、Jquery以及内部UI库等老技术。
+- 作为项目前端负责人，协调和参与成都和尼泊尔前端组员合作开发，参与每个敏捷冲刺的Plan，Design review, Coding, Code review等开发流程，添加unit test并加入build构建流程中，将原有ut覆盖率从5%提高到20%。
+- 在不影响日常开发的同时，独立开发和迭代出针对该系统的全新build流程并提取为可为公司其他遗留项目使用的Npm package，使得支持的系统可以支持现代化前端技术及工程化，如支持ES6, Webpack, Less, Grunt等
+- 升级Protal项目，得益于上述的build新流程，和另一后端负责人在空余时间将原有jsp页面系统以及Ant的build的过程做了完全的前后端分离，并引入Grandle，这将是作为swimming其他项目迁移的范本。
+- 在Swimming Manager项目中，负责引入React技术栈，并提供umd方式供swimming manager使用，培训和指导尼泊尔的代码质量。
 
-#### 2015/6--至今（2年半）：Certusview eSketch   
+#### 2018/3--2018/6 : 旺旺便利店（新零售）
+旺旺便利店作为新零售产品，主要用于出租车零售，通过微信H5页面以及小程序方式参与购买零食消费。
+- 作为前端开发人员根据构建出产品和设计给出的设计稿实现前端H5页面，并适配各种尺寸的终端，前端主要采用Vue及其cli构建工程化。
+
+#### 2015/6--2018/3（2年半）：Certusview eSketch   
 eSketch 是ThinkGeo和CertusView公司共同开发的一款针对野外工作并基于地理位置服务的大型Web SPA系统。
 
 - 项目开发法核心成员，职责包括从前端到后端服务等实现各种复杂业务需求。
@@ -82,15 +99,6 @@ Map Suite是一个基于微软.Net框架的一整套优秀GIS地图组件，包�
 - 涉及到的技术包括：NodeJS, HTML5, JS, CSS, Ajax
 - AWS 云技术：S3, Lambda, DynamoDB, API Gateway
 - Stripe 支付宝支付，OpenTok Web视频通话
-
-2017/8--2017-12 微信小程序（未完）   
-个人兴趣项目，主要目的是提供群组共享定位的小程序。
-- 客户端采用微信SDK及WeUI组件，服务端采用NodeJS, express实现Rest Full APIs
-- 数据库使用MongoDB, 以及Mocha进行代码单元测试 
-
-项目地址：   
-https://github.com/Troy-Yang/locate-us-wechat-server   
-https://github.com/Troy-Yang/locate-us-wechat-client
 
 教育经历：2008/2012 乐山师范学院 计算机科学与技术   
 英语能力：四级
