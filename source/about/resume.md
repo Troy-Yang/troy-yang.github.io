@@ -42,9 +42,9 @@ LinkedIn: https://www.linkedin.com/in/troy-yang/
 2018/6--至今 ：（Active Network)活跃网络   高级前端开发工程师
 - 负责Swim项目组前端小组包括成都和尼泊尔团队在内的日常开发工作
 - 升级和维护遗留项目，构建前端工程化及添加自动测试规范化
-- 独立开发 build npm包，用于优化和替换公司原有基于Ant build流程，提高前端开发效率的同时，为困扰多年的前后端分离做出最重要的一步
+- 独立开发 build npm包，用于优化和替换公司原有基于Ant build流程，将前后端彻底分离提供支持
 - 在主要遗留产品中引入和搭建React技术栈，制定相关规范，使得新功能全部以React开发
-- 参与公司内部前端Team，积极参与和分享每周内部分享会，参与开发数个公司内部npm packages
+- 参与公司内部前端Team，共同参与开发数个公司内部npm packages
 2018/4--2018/6 (2月)：聚美优品  前端开发工程师
 - 参与开发微信H5页面，微信小程序
 2012/3--2018/3（6年）：(ThinkGeo)成都思宙科技有限公司    软件工程师
@@ -94,11 +94,18 @@ Map Suite是一个基于微软.Net框架的一整套优秀GIS地图组件，包�
 - 主要职责是作为唯一开发人员负责前端JS编写及后端服务器编写。
 - 通过此项目，让甲方明确Web技术栈尤其H5完全满足外勤苛刻条件下的Web解决方案，并开始了更多C/S项目向B/S项目的转移。
 
-### 个人项目
-2017/10--2017/12 https://myenglishtutor.eu   
-- 涉及到的技术包括：NodeJS, HTML5, JS, CSS, Ajax
-- AWS 云技术：S3, Lambda, DynamoDB, API Gateway
-- Stripe 支付宝支付，OpenTok Web视频通话
+#### 2017/10—2018/7: https://myenglishtutor.eu (项目负责人)
+项目是一个以英语培训为目的的 Web 内容管理系统，网站所有者是一位英国朋友，本人负责所有技术问题。其核心功能包括，内容发布，Stripe 全球支付，SEO 性能优化，Web 视频通话等功能:
+- 跨多平台支持。
+- NodeJS, HTML5, JS, CSS, Ajax, Hexo，也基于需求，开发过懒加载的 NPM 包 [hexo-lazyload-image](https://www.npmjs.com/package/hexo-lazyload-image)
+- 前端 UI 主题采用的是自己开发并开源在 github 上的 [hexo-theme-twentyfifteen-wordpress](https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress)，并得到开源
+社区广泛的认可和采用。
+- 大量采用了 AWS 生态云技术:S3 存储静态网站内容 , 使用 Lambda + DynamoDB + API Gateway 实现
+Serverless 服务端架构，CloudFront 做 CDN 支持，通过 AWS 的各项服务使得系统可维护性、可靠性、
+可扩展性大大提升。
+- 通过对 Stripe SDK 研究，成功集成了海外 Stripe 对支付宝的支持
+- 创建浏览器端视频通话系统基于 OpenTok 的 Web SDK，前端基于一个开源的 Angular 项目改进，后端使用到 AWS 架构的 Serverless 服务端。
+- 通过上述大量新技术的学习和快速应用，充分得到合伙人的信任并愿意继续后续深度合作。
 
 教育经历：2008/2012 乐山师范学院 计算机科学与技术   
 英语能力：四级
