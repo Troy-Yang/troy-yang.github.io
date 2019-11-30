@@ -1,14 +1,4 @@
 
-### 基本信息
----
-
-|||||
-|-----|-----|------| -------|
-|姓名    |杨舟          |出生年份|1990|
-|性别    |男	        |学历    |本科
-|毕业院校|乐山师范学院  |专业 |计算机科学与技术
-|联系电话|18683626290	|电子邮件|yangzhouemail@163.com
-
 博客: https://troyyang.com   
 Github: https://github.com/troy-yang   
 LinkedIn: https://www.linkedin.com/in/troy-yang/ 
