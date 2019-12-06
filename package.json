@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.9.0"
+    "version": "3.7.1"
   },
   "scripts": {
     "start": "hexo clear & hexo g & hexo server",
@@ -22,7 +22,7 @@
     "hexo-generator-search": "^2.1.1",
     "hexo-generator-seo-friendly-sitemap": "0.0.21",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-lazyload-image": "^1.0.3",
+    "hexo-lazyload-image": "^1.0.5",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.11",
     "hexo-renderer-stylus": "^0.3.1",
