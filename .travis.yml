@@ -1,32 +1,22 @@
+sudo: false
 language: node_js
 node_js: stable
-
-# S: Build Lifecycle
-install:
-  - npm install
-
-before_install:
-  - git submodule update --init --remote --recursive
-  
-#before_script:
- # - npm install -g gulp
-
-script:
-  - npm run build
-
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "troyyang"
-  - git config user.email "yangzhouemail@163.com"
-  - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${GitHub_TOKEN}@${GH_REF}" master:master
-# E: Build LifeCycle
-
+cache: npm
 branches:
   only:
     - Source
-env:
- global:
-   - GH_REF: github.com/Troy-Yang/troy-yang.github.io.git
+before_install:
+  - git submodule update --init --remote --recursive
+
+install:
+  - npm install
+script:
+  - npm run build # generate static files
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GitHub_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local-dir: public
