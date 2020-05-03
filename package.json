@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.9.0"
   },
   "scripts": {
     "start": "hexo clear & hexo g & hexo server",
     "build": "hexo clear & hexo g"
   },
   "dependencies": {
-    "clean-css": "^4.1.7",
+    "clean-css": "^4.2.3",
     "hexo": "^3.7.1",
     "hexo-baidu-url-submit": "0.0.5",
     "hexo-clean-css": "0.0.3",
@@ -20,9 +20,9 @@
     "hexo-generator-feed": "^1.2.0",
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-search": "^2.1.1",
-    "hexo-generator-seo-friendly-sitemap": "0.0.21",
+    "hexo-generator-seo-friendly-sitemap": "0.0.25",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-lazyload-image": "^1.0.5",
+    "hexo-lazyload-image": "^1.0.8",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.11",
     "hexo-renderer-stylus": "^0.3.1",
