@@ -21,6 +21,8 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
+      - name: Pre Install
+        run: git submodule update --init --remote --recursive
       - name: Install Dependencies
         run: npm install
       - name: Build
@@ -28,6 +30,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUBCI }}
           publish_dir: ./public
           publish_branch: master  # deploying branch
