@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "hexo clear & hexo g & hexo server",
-    "build": "hexo clear & hexo g"
+    "build": "hexo clear & hexo g -d"
   },
   "dependencies": {
     "clean-css": "^4.2.3",
