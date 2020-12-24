@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://troyyang.com/"/>
-  <updated>2020-12-24T06:26:27.000Z</updated>
+  <updated>2020-12-24T07:32:48.337Z</updated>
   <id>http://troyyang.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Mobx在项目中的实践 及 与Redux的比较</title>
     <link href="http://troyyang.com/2020/12/20/mobx/"/>
     <id>http://troyyang.com/2020/12/20/mobx/</id>
-    <published>2020-12-20T06:03:17.710Z</published>
-    <updated>2020-12-24T06:26:27.000Z</updated>
+    <published>2020-12-20T14:03:17.710Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<p>之前在公司FEE内部做过一次技术分享，主要关于Mobx在项目中的使用一年后的体验以及和Redux 的一些比较（因为我们项目之前的状态管理选型选择的是mobx，而其他项目组的同学选择主要是Redux或者还在纠结如何选）。</p>
 <p>以下都是根据查询各种资料后的个人理解概览</p>
@@ -89,8 +89,8 @@
     <title>纯JS实现按多列排序</title>
     <link href="http://troyyang.com/2020/05/03/multi-sort-implement-with-native-js/"/>
     <id>http://troyyang.com/2020/05/03/multi-sort-implement-with-native-js/</id>
-    <published>2020-05-03T08:34:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2020-05-03T16:34:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<h3 id="重要的事情还是要说的"><a href="#重要的事情还是要说的" class="headerlink" title="重要的事情还是要说的"></a>重要的事情还是要说的</h3><p>项目里没引用 <strong>lodash</strong> （因为和 underscore.js 冲突）</p>
 <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>数据结构类似这种：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const testData = [</span><br><span class="line">  &#123; name: &apos;1&apos;, primary: true, startDate: &apos;2018-01-01T08:00:00Z&apos;, endDate: &apos;2018-05-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;A&apos;, primary: true, startDate: &apos;2018-02-01T08:00:00Z&apos;, endDate: &apos;2018-06-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;a&apos;, primary: true, startDate: &apos;2019-02-01T08:00:00Z&apos;, endDate: &apos;2019-05-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;b&apos;, primary: false, startDate: &apos;2019-02-01T08:00:00Z&apos;, endDate: &apos;2019-02-01T08:00:00Z&apos; &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
@@ -136,10 +136,10 @@
   
   <entry>
     <title>神奇的 ES6 继承执行顺序问题</title>
-    <link href="http://troyyang.com/2019/12/17/%E7%A5%9E%E5%A5%87%E7%9A%84-es6-%E7%BB%A7%E6%89%BF%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E9%97%AE%E9%A2%98/"/>
-    <id>http://troyyang.com/2019/12/17/神奇的-es6-继承执行顺序问题/</id>
-    <published>2019-12-17T06:03:17.710Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <link href="http://troyyang.com/2019/12/17/amazing-es6-exec-order-issue/"/>
+    <id>http://troyyang.com/2019/12/17/amazing-es6-exec-order-issue/</id>
+    <published>2019-12-17T14:03:17.710Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<p>刷推的时候无意间发现一位google 工程师发的一个感叹，感叹发现的一个神奇的JS 6继承顺序问题。。。</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/uploads/2019-12-17-js6-class-order-miracle-tweeter.jpeg" alt=""></p>
@@ -168,8 +168,8 @@
     <title>使用NetlifyCMS在线编辑Github上的博客</title>
     <link href="http://troyyang.com/2019/11/24/githug-netlify/"/>
     <id>http://troyyang.com/2019/11/24/githug-netlify/</id>
-    <published>2019-11-23T20:08:35.524Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2019-11-24T04:08:35.524Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Netlify-CMS-介绍"><a href="#Netlify-CMS-介绍" class="headerlink" title="Netlify CMS 介绍"></a>Netlify CMS 介绍</h3><p>使用Netlify CMS我感觉有以下优点：</p>
 <ul>
@@ -228,8 +228,8 @@
     <title>AWS系列之使用无服务器架构你的网站</title>
     <link href="http://troyyang.com/2018/12/16/aws_serverless/"/>
     <id>http://troyyang.com/2018/12/16/aws_serverless/</id>
-    <published>2018-12-16T01:37:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2018-12-16T09:37:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="Serverless-有什么用啊？"><a href="#Serverless-有什么用啊？" class="headerlink" title="Serverless 有什么用啊？"></a>Serverless 有什么用啊？</h3><p>Jason最近又出新想法了，想要做一个简单的用户管理系统，好的，没问题，不就是在服务器上安装数据库，部署好网站吗？可答案是no，他不是专业人员，我也不可能永远维护这个服务器，更重要的是服务器开着就要美刀啊，还不能停，怎么办？有没有可以不用服务器的网站，有啊，你自己的静态博客不就是只用到了s3或者github的静态页面托管吗？可是数据库呢，后台api呢？额，这个嘛。。。   </p>
@@ -302,8 +302,8 @@
     <title>AWS系列之S3 + Cloudfront搭建https静态网站</title>
     <link href="http://troyyang.com/2018/05/12/aws_s3_https_static_website/"/>
     <id>http://troyyang.com/2018/05/12/aws_s3_https_static_website/</id>
-    <published>2018-05-12T01:37:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2018-05-12T09:37:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>本文和之前写的<a href="https://troyyang.com/2018/02/16/hosting-images-with-aws-s3/">《正确使用AWS S3的方式之打造自己的https图床》</a> 内容非常像，但也有新的内容如自动上传部署和自定义证书、Route53部分，这里主要补充新的内容。</p>
@@ -343,9 +343,9 @@
       <category term="aws" scheme="http://troyyang.com/categories/aws/"/>
     
     
-      <category term="hexo" scheme="http://troyyang.com/tags/hexo/"/>
-    
       <category term="https" scheme="http://troyyang.com/tags/https/"/>
+    
+      <category term="hexo" scheme="http://troyyang.com/tags/hexo/"/>
     
       <category term="aws" scheme="http://troyyang.com/tags/aws/"/>
     
@@ -355,8 +355,8 @@
     <title>AWS系列之 myenglishtutor基于AWS生态的广泛使用</title>
     <link href="http://troyyang.com/2018/05/12/aws_structure_series/"/>
     <id>http://troyyang.com/2018/05/12/aws_structure_series/</id>
-    <published>2018-05-12T01:37:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2018-05-12T09:37:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>看着系统生成的写作时间，2018年5月12日，恐怕是让所有四川人都难以忘怀的日子，在此缅怀十年前大地震遇难的同胞，也希望曾遭受苦痛的同胞十年后的今天一切安好！</p>
@@ -457,8 +457,8 @@
     <title>正确使用AWS S3的方式之打造自己的https图床</title>
     <link href="http://troyyang.com/2018/02/16/hosting-images-with-aws-s3/"/>
     <id>http://troyyang.com/2018/02/16/hosting-images-with-aws-s3/</id>
-    <published>2018-02-16T14:01:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2018-02-16T22:01:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>写过博客的人都知道图床，一个托管自己博客图片的地方，当然托管到自己的服务器另当别论。常见的图床可以是新浪博客，七牛云，imgur等，但是都是有各种问题，比如我之前使用的是七牛云（也曾在<a href="https://troyyang.com/2017/05/21/Add_Free_Certification_In_Blog_Step_By_Step/">《给Github自定义域名加上HTTPS》</a>博文上推荐使用），用起来相当不错，只可惜后来备案信息过期了，导致无法再使用自定义域名，更可悲的是，https不再支持，意味着尽管我的博客是https但由于有内容是http的，只能被浏览器认为是mixed-content的。</p>
@@ -518,8 +518,8 @@
     <title>Stripe开发使用指南--国际支付（含支付宝）</title>
     <link href="http://troyyang.com/2018/01/21/stripe_guide_alipay/"/>
     <id>http://troyyang.com/2018/01/21/stripe_guide_alipay/</id>
-    <published>2018-01-21T03:08:49.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2018-01-21T11:08:49.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>前段时间，因为Jason让我帮忙把Stripe支付集成到他个人网站上去，让我有机会接触到支付系统开发，同时也因为苦于没有找到太多中文方面相关文档介绍，所以做个总结，也方便以后有需要的同学。<br>(更新) 发现好些同学也在咨询如何集成微信支付，其实也是非常简单，所以新增了最后微信的实现，见最后</p>
@@ -598,8 +598,8 @@
     <title>成都持续交付大会</title>
     <link href="http://troyyang.com/2017/12/10/cdconf/"/>
     <id>http://troyyang.com/2017/12/10/cdconf/</id>
-    <published>2017-12-10T02:27:03.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-12-10T10:27:03.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<p>抽空记录一下2017年11月18日中国第十三届持续交付大会的内容，总的来说收货满满，扫盲了很多持续集成，持续交付以及众多分布式相关的技术。</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/2017-11-18-cdconf.png" alt="image"></p>
@@ -629,8 +629,8 @@
     <title>Linux下Apache反向代理搭建SSL + Node 服务配置</title>
     <link href="http://troyyang.com/2017/11/26/linux_apache_ssl_node/"/>
     <id>http://troyyang.com/2017/11/26/linux_apache_ssl_node/</id>
-    <published>2017-11-26T07:59:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-11-26T15:59:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="SSL-配置"><a href="#SSL-配置" class="headerlink" title="SSL 配置"></a>SSL 配置</h2><h3 id="证书申请"><a href="#证书申请" class="headerlink" title="证书申请"></a>证书申请</h3><p>Cloudflare生成证书key pair 的pem 格式文件，更名为.crt和.key。文件名和扩展名只是为了提供便利，对功能没有影响；你可以将证书命名为 cert.crt、cert.pem 或 任何其他文件名。</p>
@@ -677,8 +677,8 @@
     <title>windows 下搭建https + node.js + nginx</title>
     <link href="http://troyyang.com/2017/11/07/windows-ssl-node-nginx/"/>
     <id>http://troyyang.com/2017/11/07/windows-ssl-node-nginx/</id>
-    <published>2017-11-07T03:59:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-11-07T11:59:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>最近做一个微信小程序的时候因为要求所有请求都得是https的连接，服务器端https 倒是搭建好了，可本地测试没法进行啊，于是只能自己在本地搭建个https的服务。</p>
@@ -741,8 +741,8 @@
     <title>js 笔记之完美继承的演变</title>
     <link href="http://troyyang.com/2017/10/21/Javascript_Prototype_Inherience/"/>
     <id>http://troyyang.com/2017/10/21/Javascript_Prototype_Inherience/</id>
-    <published>2017-10-21T08:57:03.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-10-21T16:57:03.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<p>首先提个问题，都知道JS中的继承方式演变了很多种，你能完整的写出一种吗？用的最多的又是那种？如果你只能想到SubClass.prototype = new ParentClass()的同学就真该好好面壁了。</p>
 <p>前段时间写了一篇<a href="https://troyyang.com/2017/06/25/Javascript_Prototype_Inherience_Understanding/">JS继承的简单理解</a>，实在是太简单了，主要是为了梳理原型和构造器的关系。最近在对公司新同事的培训中涉及到JS核心部分，所以又仔细去研究了一下，整理出这篇笔记，如有错误，欢迎指出并拍砖。</p>
@@ -802,8 +802,8 @@
     <title>高可靠性MongoDB 安装指南</title>
     <link href="http://troyyang.com/2017/09/01/mongo-installation-guide/"/>
     <id>http://troyyang.com/2017/09/01/mongo-installation-guide/</id>
-    <published>2017-09-01T11:20:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-09-01T19:20:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<p>最近项目中用到了MongoDB，顺便就写了安装说明文档，包括创建高可靠性的副本集replica-set，远程连接，密码登录等配置。</p>
 <h3 id="安装-MongoDB"><a href="#安装-MongoDB" class="headerlink" title="安装 MongoDB"></a>安装 MongoDB</h3><ol>
@@ -855,8 +855,8 @@
     <title>Hexo-lazyload-image图片懒加载</title>
     <link href="http://troyyang.com/2017/08/06/hexo-lazyload-image/"/>
     <id>http://troyyang.com/2017/08/06/hexo-lazyload-image/</id>
-    <published>2017-08-06T10:20:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-08-06T18:20:22.000Z</published>
+    <updated>2020-12-24T07:32:48.337Z</updated>
     
     <content type="html"><![CDATA[<h3 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h3><p>最近在看Google Chrome新出的一个API是无意间想到了对图片的懒加载，后来想想自己的网站还不支持呢，索性花了些时间让网站给支持上了，并发现Hexo上还没有一个懒加载的插件，又倒腾着写了个hexo的插件<a href="https://www.npmjs.com/package/hexo-lazyload-image" target="_blank" rel="noopener">hexo-lazyload-image</a>，并发布到NPM上供大家使用，从这几天下载数来看看来大家还是很有这个需求 :)。</p>
 <h3 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h3><p>图片懒加载是提升网站性能和用户体验的一个非常很好方式，并且几乎所有的大型网站都使用到了，比如微博，仅把用户可见的部分显示图片，其余的都暂时不加载，做法就是：让所有图片元素src指向一个小的站位图片比如loading，并新增一个属性(如data-original)存放真实图片地址。每当页面加载（或者滚动条滚动），使用JS脚本将可视区域内的图片src替换回真实地址，并做请求重新加载。 </p>
@@ -900,8 +900,8 @@
     <title>Javascript中原型链继承的简单理解</title>
     <link href="http://troyyang.com/2017/06/25/Javascript_Prototype_Inherience_Understanding/"/>
     <id>http://troyyang.com/2017/06/25/Javascript_Prototype_Inherience_Understanding/</id>
-    <published>2017-06-25T02:27:03.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-06-25T10:27:03.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<p>以前对于Javascipt中的继承，大部分只是基于代码层面，理论理解虽然看了很多，总是当时理解了过几天确又忘了怎么的了。这两天又看了一遍《Javascrip面向对象编程指南》，其中在说到原型链的时候有一段话解释了很多以前自己容易混淆的地方：</p>
 <blockquote>
@@ -942,8 +942,8 @@
     <title>Travis-ci自动编译部署github上的项目</title>
     <link href="http://troyyang.com/2017/06/24/Travis_Auto_Build_Deploy_Github_Projects/"/>
     <id>http://troyyang.com/2017/06/24/Travis_Auto_Build_Deploy_Github_Projects/</id>
-    <published>2017-06-24T02:31:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-06-24T10:31:22.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<p>在使用Hexo写完一篇博客后，都需要手动在本地编译，并生成静态文件，最后在上传至github服务器上才能发布，繁琐步骤姑且不说，万一哪天换了台电脑，没有Hexo环境的时候如何写博客呢又或者修改博客Bug？要是直接在github源码里写好文章后能自动编译发布就好了，好在github的好基友travis可以轻松帮我们同时实现这种持续集成, 持续部署。</p>
 <h2 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h2><p>我的博客是基于<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>写的，最终发布地址是托管到Troy-Yang/troy-yang.github.io下的，为了方便，我把源码放在他的一个source分支下，以前要写一篇博客的做法是：</p>
@@ -983,9 +983,9 @@
       <category term="笔记" scheme="http://troyyang.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="travis-ci" scheme="http://troyyang.com/tags/travis-ci/"/>
-    
       <category term="github" scheme="http://troyyang.com/tags/github/"/>
+    
+      <category term="travis-ci" scheme="http://troyyang.com/tags/travis-ci/"/>
     
       <category term="hexo" scheme="http://troyyang.com/tags/hexo/"/>
     
@@ -995,8 +995,8 @@
     <title>踩过的坑--CORS跨域请求中预检(preflight)</title>
     <link href="http://troyyang.com/2017/06/06/Express_Cors_Preflight_Request/"/>
     <id>http://troyyang.com/2017/06/06/Express_Cors_Preflight_Request/</id>
-    <published>2017-06-06T11:59:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-06-06T19:59:22.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h3><p>这两天在使用NodeJS Express搭建REST服务器时遇到一个很典型的AJAX跨域包含自定义请求头问题（用于身份验证），在花了大半天时间排查问题后发现自己对CORS真正的理解还很不够，尤其是pre-flight。</p>
@@ -1051,8 +1051,8 @@
     <title>给Github自定义域名加上HTTPS</title>
     <link href="http://troyyang.com/2017/05/21/Add_Free_Certification_In_Blog_Step_By_Step/"/>
     <id>http://troyyang.com/2017/05/21/Add_Free_Certification_In_Blog_Step_By_Step/</id>
-    <published>2017-05-21T07:59:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-05-21T15:59:22.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>随着Https越来越成为一种趋势，最近也给自己家博客弄上了高大上的https，主要是结合使用的cloudflare和七牛云（图床）使用，关键是免费！所以想把这个过程记录下来，万一有人用得到呢。(还想抽空写写对Https的原理的理解，主要目的还是总结前段时间自己对Https的学习。)</p>
@@ -1135,9 +1135,9 @@
       <category term="security" scheme="http://troyyang.com/categories/security/"/>
     
     
-      <category term="github" scheme="http://troyyang.com/tags/github/"/>
-    
       <category term="https" scheme="http://troyyang.com/tags/https/"/>
+    
+      <category term="github" scheme="http://troyyang.com/tags/github/"/>
     
   </entry>
   
@@ -1145,8 +1145,8 @@
     <title>《CSS设计指南》笔记</title>
     <link href="http://troyyang.com/2017/04/20/Learn_Stylin_With_Css/"/>
     <id>http://troyyang.com/2017/04/20/Learn_Stylin_With_Css/</id>
-    <published>2017-04-20T14:28:36.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-04-20T22:28:36.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
 <li>子元素 &gt; :  用于选择所有给定子元素，如 .food&gt;li</li>
@@ -1204,8 +1204,8 @@
     <title>小米路由器 安装 Shadowsocks 客户端</title>
     <link href="http://troyyang.com/2017/04/16/XiaoMi_Router_Install_Shadowsocks/"/>
     <id>http://troyyang.com/2017/04/16/XiaoMi_Router_Install_Shadowsocks/</id>
-    <published>2017-04-16T03:10:00.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-04-16T11:10:00.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>当然是为了省去多个终端连接的烦恼，而我的直接原因确是为了Google神器Chromecast能正常使用（就单单是电视投射功能就足以让我心动）。大半年前在美国买了一个Chromecast，在美国的时候工作的好好的，回国后确怎么也投射不了，总是找不到设备，大概猜到是因为被墙的原因，可惜电脑挂起了VPN还是不行，后来才知道是电视也需要连接Google 服务！坑爹啊！然后就一直静静的放着放着直到这次买了个服务器(也是为了科学上网)后，想试试让路由器直接连Shadowsocks。</p>
 <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
@@ -1250,8 +1250,8 @@
     <title>Ubuntu 安装 Shadowsocks 实现科学上网</title>
     <link href="http://troyyang.com/2017/03/26/Ubuntu_Install_ShadowSocks/"/>
     <id>http://troyyang.com/2017/03/26/Ubuntu_Install_ShadowSocks/</id>
-    <published>2017-03-26T03:20:00.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-03-26T11:20:00.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h3><p>看了shadowsocks的各种安装部署教程，因为对于linux不熟，所以遇到很多坑，自己留个笔记在这里</p>
@@ -1308,8 +1308,8 @@
     <title>从wordpress主题中看CSS设计</title>
     <link href="http://troyyang.com/2017/03/11/Learn_CSS_from_wordpress_theme/"/>
     <id>http://troyyang.com/2017/03/11/Learn_CSS_from_wordpress_theme/</id>
-    <published>2017-03-11T04:20:22.000Z</published>
-    <updated>2020-12-24T03:12:51.000Z</updated>
+    <published>2017-03-11T12:20:22.000Z</published>
+    <updated>2020-12-24T07:32:48.333Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>最近想做个个人博客，看上了wordpress的<a href="https://wordpress.org/themes/twentyfifteen/" target="_blank" rel="noopener">twentyfifteen</a>模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的，于是就掉入了源码坑里，爬了一周才算勉强爬出来，回过头来觉得这个坑里还是有很多有营养的东西，毕竟是大公司，所有标准都是最新的，所以想总结下学到的东西，方便以后使用(持续更新中)</p>
