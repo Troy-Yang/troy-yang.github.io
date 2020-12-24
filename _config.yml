@@ -97,10 +97,10 @@ lazyload:
   onlypost: false
   loadingImg: # eg. ./images/loading.png
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-- type: git
-  repo: https://github.com/Troy-Yang/troy-yang.github.io.git
-  branch: master
-- type: baidu_url_submitter
+# # Deployment
+# ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+# - type: git
+#   repo: https://github.com/Troy-Yang/troy-yang.github.io.git
+#   branch: master
+# - type: baidu_url_submitter
