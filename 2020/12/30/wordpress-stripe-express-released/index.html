@@ -8,7 +8,7 @@
 	
 		<link href="/favicon.ico" rel="icon">
 	 
-      <title>纯JS实现按多列排序 | 船长的技术博客</title>
+      <title>Wordpress 插件 Stripe Express 发布啦！ | 船长的技术博客</title>
 	<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/highlight.css">
@@ -128,41 +128,35 @@ ga('send', 'pageview');
 		<div id="content" class="site-content">
 			<main id="main" class="site-main" role="main">
 				
-<article class="hentry ">
+<article class="hentry has-post-thumbnail">
 		
+	
+      <a class="post-thumbnail" href="https://images.troyyang.com/wordprss-stripe-express-banner.png" rel="gallery_ckjbh4m4f001q2lni2lmh80q2">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/wordprss-stripe-express-banner.png" itemprop="image">
+      </a>
+    
+
 		
 			<header class="entry-header">
-				<h2 class="entry-title"><a class="post-title-link" href="/2020/05/03/multi-sort-implement-with-native-js/" rel="bookmark">纯JS实现按多列排序</a></h2>	
+				<h2 class="entry-title"><a class="post-title-link" href="/2020/12/30/wordpress-stripe-express-released/" rel="bookmark">Wordpress 插件 Stripe Express 发布啦！</a></h2>	
 			</header>
 		
 		<!-- .entry-header -->
 		<div class="entry-content">
 			
-				<h3 id="重要的事情还是要说的"><a href="#重要的事情还是要说的" class="headerlink" title="重要的事情还是要说的"></a>重要的事情还是要说的</h3><p>项目里没引用 <strong>lodash</strong> （因为和 underscore.js 冲突）</p>
-<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>数据结构类似这种：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const testData = [</span><br><span class="line">  &#123; name: &apos;1&apos;, primary: true, startDate: &apos;2018-01-01T08:00:00Z&apos;, endDate: &apos;2018-05-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;A&apos;, primary: true, startDate: &apos;2018-02-01T08:00:00Z&apos;, endDate: &apos;2018-06-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;a&apos;, primary: true, startDate: &apos;2019-02-01T08:00:00Z&apos;, endDate: &apos;2019-05-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;b&apos;, primary: false, startDate: &apos;2019-02-01T08:00:00Z&apos;, endDate: &apos;2019-02-01T08:00:00Z&apos; &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
-<p>最近项目中有大量的对排序的新需求，由其是按多列来排序， 新需求大致如下：</p>
-<ul>
-<li>Archived 为true的排列到最后，否则排最前面</li>
-<li>然后，按照 StartDate 时间，如果最新，则排前面</li>
-<li>然后，如果 StartDate 相同，则按照 EndDate 来排，</li>
-<li>然后，如果 EndDate 也相同，则按照 name 的字母表的顺序排</li>
-</ul>
-<p>同时呢，之前项目中也有很多类似的需求：</p>
-<ul>
-<li>先按照 ModifiedDate 排，</li>
-<li>如果相同，则按 name 字母表顺序</li>
-</ul>
-<p>或者</p>
-<ul>
-<li>Primary 为true 的排前面</li>
-<li>如果Primary 相同， 按照 name 字母表排序</li>
-</ul>
-<p>还有更多的类似需求，我们项目里原来有个 Sort.js 的公共方法来处理这些排序，选取了其中最长的一个 (其实上面需求的每一个实现都和这个差不多)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">const sortFlattenPrograms = (flattenPrograms) =&gt;</span><br><span class="line">    flattenPrograms.sort((a, b) =&gt; &#123;</span><br><span class="line">      // first sort by archived: unarchived first</span><br><span class="line">      if(a.archived &amp;&amp; !b.archived) &#123;</span><br><span class="line">        return 1;</span><br><span class="line">      &#125; else if(!a.archived &amp;&amp; b.archived) &#123;</span><br><span class="line">        return -1;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      // sort by start date: latest first</span><br><span class="line">      let dateCompareResult = compareDateLatestFirst(a.startDate, b.startDate);</span><br><span class="line">      if(dateCompareResult !== 0) &#123;</span><br><span class="line">        return dateCompareResult;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      // sort by end date: latest first</span><br><span class="line">      dateCompareResult = compareDateLatestFirst(a.endDate, b.endDate);</span><br><span class="line">      if(dateCompareResult !== 0) &#123;</span><br><span class="line">        return dateCompareResult;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      // sort by program name - location name: alphabetically (ignore case)</span><br><span class="line">      const nameCompareResult = compareStringAlphabeticallyIgnoreCase(getProgramFullName(a), getProgramFullName(b));</span><br><span class="line">      if(nameCompareResult !== 0) &#123;</span><br><span class="line">        return nameCompareResult;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      return 0;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure></p>
-<p>是不是很长，很丑，而且这只是一个排序，还有很多这种和0比较，然后再比较，所以继续加下去肯定不可取，维护是个很大的问题，UT 也很难写，要是能抽出中间部分就好了？？？</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>先贴代码，其实核心就是抽取上面的各种comparator， 并且采用链式的方式执行，这里使用reduce方法来取了个巧，其实，查看了lodash的实现后， 他们采用的是 while 实现。</p>
-<p>注意排序的顺序，是按照从右到左，我想的是尽量和 <strong>functional programming</strong> 的方式来写，并且compose 方法在lodash 里也是这个顺序，如果想改为从左往右，只需要将 <strong>reduce</strong> 改为 <strong>reduceRight</strong> 即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">   * Sort by order list from right to left</span><br><span class="line">   * For example: we want to order by start date, if date equal, then order by end date, if equal, then name</span><br><span class="line">   * composeOrderBy([oderByName, orderByEndDate, orderByStartDate])</span><br><span class="line">   * @param &#123;*&#125; comparators</span><br><span class="line">   */</span><br><span class="line">  const composeOrderBy = (comparators) =&gt; &#123;</span><br><span class="line">    const makeChainedComparator = (first, next) =&gt; &#123;</span><br><span class="line">      return function (a, b) &#123;</span><br><span class="line">        var result = first(a, b);</span><br><span class="line">        if(result !== 0) return result;</span><br><span class="line">        return next(a, b);</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">    return comparators.reduce(function (chained, first) &#123;</span><br><span class="line">      return makeChainedComparator(first, chained);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure></p>
-<p>所以，上面的需求可以简单改为下面，其实comparators 是一个我预先定义好的各种比较方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 预先定义的方法</span><br><span class="line">comparators = &#123;</span><br><span class="line">  compareStringField: (field, ignoreCase = true)=&gt; (a, b) =&gt; &#123; ... &#125;,</span><br><span class="line">  compareBoolField: (field, trueFirst = true) =&gt; (a, b) =&gt; &#123; ... &#125;,</span><br><span class="line">  compareDateLatestFirst: (field) =&gt; (a, b) =&gt; &#123; ... &#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">data.sort(composeOrderBy([</span><br><span class="line">        comparators.compareNameIgnoreCase(),</span><br><span class="line">        comparators.compareDateLatestFirst(&apos;endDate&apos;),</span><br><span class="line">        comparators.compareDateLatestFirst(&apos;startDate&apos;),</span><br><span class="line">        comparators.compareBoolField(&apos;archived&apos;, false)</span><br><span class="line">      ]));</span><br><span class="line"></span><br><span class="line">data.sort(composeOrderBy([</span><br><span class="line">        comparators.compareNameIgnoreCase(),</span><br><span class="line">        comparators.compareDateLatestFirst(&apos;modifiedDate&apos;)</span><br><span class="line">      ]));</span><br></pre></td></tr></table></figure></p>
-<p>最终还是需要用到 array的sort 方法，但由于这不是纯函数，所以保险的做法就是调用sort前，先在clone一下</p>
+				<hr>
+<h2 id="Stripe-Express-是什么？"><a href="#Stripe-Express-是什么？" class="headerlink" title="Stripe Express 是什么？"></a>Stripe Express 是什么？</h2><p>简单来说，Stripe Express 是一款针对wordpress 平台，帮助你使用 stripe 快速，方便完成跨境支付的一款免费插件（扩展功能收费）。其中，包括多种已经创建好的支付组件，包括一次性支付(one-time)，电子钱包（支付宝，微信，Apple Pay, Google Pay，下面重点会提到微信和支付宝），表单支付等等组件，需要提及的是，上面的组件都支持常见的各种信用卡，Master, Visi, American Express, 等等等等，以及其他国家地区的主流支付方式比如 Bancontact, FPX, EPS, SEPA, Giropay, Sofort, iDeal。</p>
+<p>所以，只有你有一个 Stripe 的账号，那么超过三十多个国家地区的客户都可以向你支付（对于微信和支付宝，你无需申请支付宝或者微信的商家账号，即可免费收款）。</p>
+<p>问题: 什么人更需要这个组件？<br>回答: 现阶段，因为还没集成woocommence， 所以如果你没有一个完整的电子商务网站比如使用 woocommence搭建，只是一个简单的Wordpress 网站，但是你又有自己的产品或者服务需要销售，而你只是想你用户简单的点击购买，付款。</p>
+<p><a href="https://wordpress.org/plugins/wp-stripe-express/" target="_blank" rel="noopener">wordpress 插件地址</a></p>
+<h2 id="https-itstripe-com-VS-Stripe-Express"><a href="#https-itstripe-com-VS-Stripe-Express" class="headerlink" title="https://itstripe.com VS Stripe Express"></a><a href="https://itstripe.com" target="_blank" rel="noopener">https://itstripe.com</a> VS Stripe Express</h2><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/itstripe-logo.png" alt="">   </p>
+<p>Stripe Express 是本人的网站<a href="https://itstripe.com下的针对Wordpress" target="_blank" rel="noopener">https://itstripe.com下的针对Wordpress</a> 平台的一个插件，先说说 itstripe.com， 创办的原因其实还是在我们国内，大部分人肯定知道Paypal，却不知道Stripe，更别说用过，当然也和Stripe 暂不支持中国商家的原因分不开。殊不知，国外Stripe普及程度远大于我们的想象，很多网站都会加上对Stripe 的支持，因为这意味着你的网站可以面向全世界超过30个主要国家的客户收费，包括中国！所以想要做跨境支付的话，Stripe 你必须要熟悉！   </p>
+<p>不继续布道了，说会正题，itstripe.com 的创办主要是从 wordpress 的 stripe 插件开始，毕竟全世界超过30%的网站都是他创建的，而且现在也依旧火爆。再加上之前很多朋友都在咨询我关于 stripe 在wordpress上的问题，所以主要侧重点会是在 stripe express 这款插件上。其次，网站会包括产品介绍，以及插件的文档，还有和stripe 相关集成服务，如果你有集成这方面的需求的话，或者Web 的支付开发，可以联系我们。   </p>
+<h2 id="Stripe，微信-和-支付宝"><a href="#Stripe，微信-和-支付宝" class="headerlink" title="Stripe，微信 和 支付宝"></a>Stripe，微信 和 支付宝</h2><p>这是一个最重要的原因之一促使我想要做这么一个东西。有这么一部分人：1. 小商家或者个人网站用户想要接入微信或者支付宝，方便国内用户收费，2. 国外的中小网站想要针对中国用户微信和支付宝收费。但是对于他们而言，由其老外，要想接入微信或者支付宝支付接口，门槛还是有点高，需要去申请商家账号，但是，stripe 却在这方面有着天然优势，由于已经和alipay 和 wechat 达成协议，Stripe 完全可以实现上面的收费，其中stripe 会收取3.4% + $0.50每笔的服务费。   </p>
+<p>之前写过一篇关于 <a href="https://troyyang.com/2018/01/21/stripe_guide_alipay/">stripe集成 微信和支付宝</a>的文章，反响挺大的，看到很多评论和转载，也收到很多咨询的邮件，但是之前的那篇从技术角度其实有点老了，我会另外抽时间重新写一个更通用的集成方式（已经在这款插件中实践了）</p>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>本着布道外加对自己产品的宣传，我计划的是在明年多写写 stripe 相关的技术文章，也许有的也只是翻译而已，希望自己能做得到！   </p>
+<p>回想这半年多的开发时间（包括插件和官网），白天正常上班，晚上继续开发，连周末都不想出门，像打鸡血一样的完善产品，终于迎来了发布的日子（实际发布的日期应该是11.25日，上传至Wordpress 插件库的那天）。无论这款插件将来如何，安装量怎样，有过这么一段为了某个目标而全力以赴的日子也是极好的！</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/wordprss-stripe-express-preview.png" alt=""> </p>
 
 
 				
@@ -283,28 +277,28 @@ ga('send', 'pageview');
 		<footer class="entry-footer">
 			<span class="posted-on font-asesome-icon">
 	<a href="" rel="bookmark">
-	<time class="updated" datetime="2020-05-03T16:34:22.000Z">2020-05-03</time>
+	<time class="updated" datetime="2020-12-30T19:49:22.000Z">2020-12-30</time>
 	</a>
 </span>
 
 	<span class="cat-links font-asesome-icon">
 		
-				<a href="/categories/Web/" rel="category tag">Web</a>
+				<a href="/categories/web/" rel="category tag">web</a>
 		
 	</span>
 
 
 	<span class="tags-links font-asesome-icon">
 	
-		<a href="/tags/web前端/" rel="category tag">web前端</a>
+		<a href="/tags/wordpress/" rel="category tag">wordpress</a>
     
-		<a href="/tags/js/" rel="category tag">js</a>
+		<a href="/tags/stripe/" rel="category tag">stripe</a>
     
 </span>
 		
 
     <span class="eye font-asesome-icon" >
-         <span id="/2020/05/03/multi-sort-implement-with-native-js/" class="leancloud_visitors" data-flag-title="纯JS实现按多列排序">
+         <span id="/2020/12/30/wordpress-stripe-express-released/" class="leancloud_visitors" data-flag-title="Wordpress 插件 Stripe Express 发布啦！">
         
         </span>
     </span>
