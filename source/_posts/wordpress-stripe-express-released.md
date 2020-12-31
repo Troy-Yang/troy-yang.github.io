@@ -13,7 +13,7 @@ photos:
 ***
 
 ## Stripe Express 是什么？
-简单来说，Stripe Express 是一款针对wordpress 平台，帮助你使用 stripe 快速，方便完成跨境支付的一款免费插件（扩展功能收费）。其中，包括多种已经创建好的支付组件，包括一次性支付(one-time)，电子钱包（支付宝，微信，Apple Pay, Google Pay，下面重点会提到微信和支付宝），表单支付等等组件，需要提及的是，上面的组件都支持常见的各种信用卡，Master, Visi, American Express, 等等等等，以及其他国家地区的主流支付方式比如 Bancontact, FPX, EPS, SEPA, Giropay, Sofort, iDeal。
+简单来说，Stripe Express 是一款针对wordpress 平台，帮助你使用 stripe 快速，方便完成跨境支付的一款免费插件（扩展功能收费）。其中，包括多种已经创建好的支付组件，包括一次性支付(one-time)，电子钱包（支付宝，微信，Apple Pay, Google Pay，下面重点会提到微信和支付宝），表单支付等等组件，需要提及的是，上面的组件都支持常见的各种信用卡，Master card, Visa, 等等等等，以及其他国家地区的主流支付方式比如 Bancontact, FPX, EPS, SEPA, Giropay, Sofort, iDeal。
 
 所以，只有你有一个 Stripe 的账号，那么超过三十多个国家地区的客户都可以向你支付（对于微信和支付宝，你无需申请支付宝或者微信的商家账号，即可免费收款）。
 
@@ -27,7 +27,7 @@ photos:
 
 ![](https://images.troyyang.com/itstripe-logo.png)   
 
-Stripe Express 是本人的网站https://itstripe.com下的针对Wordpress 平台的一个插件，先说说 itstripe.com， 创办的原因其实还是在我们国内，大部分人肯定知道Paypal，却不知道Stripe，更别说用过，当然也和Stripe 暂不支持中国商家的原因分不开。殊不知，国外Stripe普及程度远大于我们的想象，很多网站都会加上对Stripe 的支持，因为这意味着你的网站可以面向全世界超过30个主要国家的客户收费，包括中国！所以想要做跨境支付的话，Stripe 你必须要熟悉！   
+Stripe Express 是https://itstripe.com 下的针对Wordpress 平台的一个插件，先说说 itstripe.com， 创办的原因其实还是在我们国内，大部分人肯定知道Paypal，却不知道Stripe，更别说用过，当然也和Stripe 暂不支持中国商家的原因分不开。殊不知，国外Stripe普及程度远大于我们的想象，很多网站都会加上对Stripe 的支持，因为这意味着你的网站可以面向全世界超过30个主要国家的客户收费，包括中国！所以想要做跨境支付的话，Stripe 你必须要熟悉！   
 
 不继续布道了，说会正题，itstripe.com 的创办主要是从 wordpress 的 stripe 插件开始，毕竟全世界超过30%的网站都是他创建的，而且现在也依旧火爆。再加上之前很多朋友都在咨询我关于 stripe 在wordpress上的问题，所以主要侧重点会是在 stripe express 这款插件上。其次，网站会包括产品介绍，以及插件的文档，还有和stripe 相关集成服务，如果你有集成这方面的需求的话，或者Web 的支付开发，可以联系我们。   
 
