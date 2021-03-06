@@ -5,13 +5,14 @@ author: Troy
 tags:
 - payment
 - alipay
+- stripe
 - finance
 categories:
 - Web
 ---
 ***
 前段时间，因为Jason让我帮忙把Stripe支付集成到他个人网站上去，让我有机会接触到支付系统开发，同时也因为苦于没有找到太多中文方面相关文档介绍，所以做个总结，也方便以后有需要的同学。   
-(更新) 发现好些同学也在咨询如何集成微信支付，其实也是非常简单，所以新增了最后微信的实现，见最后
+(更新) 发现好些同学也在咨询如何集成微信支付，其实也是非常简单，所以新增了最后微信的实现，见最后 
 
 ### 关于Stripe支付
 
@@ -219,4 +220,6 @@ function generateQRCode(value) {
 }
 ```
 二维码出来后， 扫码就会得到如下结果   
-![image](https://images.troyyang.com/2018-12-16-wechat-success.jpeg)
+![image](https://images.troyyang.com/2018-12-16-wechat-success.jpeg)  
+
+(更新) 本人开发了一款wordpress stripe插件，主要针对微信和支付宝，涉及一些更新，详见另一篇文章[Wordpress 插件 Stripe Express 发布啦!](https://troyyang.com/2020/12/30/wordpress-stripe-express-released/)
