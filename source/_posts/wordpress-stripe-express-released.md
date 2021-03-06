@@ -13,7 +13,7 @@ photos:
 ***
 
 ## Stripe Express 是什么？
-简单来说，Stripe Express 是一款针对wordpress 平台，帮助你使用 stripe 快速，方便完成跨境支付的一款免费插件（扩展功能收费）。其中，包括多种已经创建好的支付组件，包括一次性支付(one-time)，电子钱包（支付宝，微信，Apple Pay, Google Pay，下面重点会提到微信和支付宝），表单支付等等组件，需要提及的是，上面的组件都支持常见的各种信用卡，Master, Visi, American Express, 等等等等，以及其他国家地区的主流支付方式比如 Bancontact, FPX, EPS, SEPA, Giropay, Sofort, iDeal。
+简单来说，Stripe Express 是一款针对wordpress 平台，帮助你使用 stripe 快速，方便完成跨境支付的一款免费插件（扩展功能收费）。其中，包括多种已经创建好的支付组件，包括一次性支付(one-time)，电子钱包（支付宝，微信，Apple Pay, Google Pay，下面重点会提到微信和支付宝），表单支付等等组件，需要提及的是，上面的组件都支持常见的各种信用卡，Master card, Visa, 等等等等，以及其他国家地区的主流支付方式比如 Bancontact, FPX, EPS, SEPA, Giropay, Sofort, iDeal。
 
 所以，只有你有一个 Stripe 的账号，那么超过三十多个国家地区的客户都可以向你支付（对于微信和支付宝，你无需申请支付宝或者微信的商家账号，即可免费收款）。
 
