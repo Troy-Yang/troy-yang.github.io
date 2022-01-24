@@ -1,0 +1,509 @@
+<html>
+<!-- Head tag -->
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+		<link href="/favicon.ico" rel="icon">
+	 
+      <title>2021年度回顾 | 船长的技术博客</title>
+	<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/highlight.css">
+	
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?542b4962c3c4035fce9071b7c665f0d2";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-97838175-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d3d630390ef40ae"></script>
+
+</head>
+<body>
+	<div id="site" class="site">
+		<div id="sidebar" class="sidebar">
+			<header id="header" class="site-header">
+	<div class="site-branding">
+		<h1 class="site-title">
+			
+				<a href="/images/avatar-small.png" class="avatar-circle"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/avatar-small.png" /></a>
+			
+			<a href="/" rel="home">Troy&#39;s 博客</a></h1>
+		<p class="site-description">专注于Web开发，现在居住于成都. Happy Coding, Happy Life!</p>
+		<button class="secondary-toggle font-asesome-icon">Menu and widgets</button>
+	</div>
+</header>
+<div id="secondary" class="secondary">
+	<nav class="main-navigation">
+                         <ul id="menu-demo-menu" class="nav-menu">
+						 
+							<li class="menu-item"><a href="/">首页</a></li>
+						
+							<li class="menu-item"><a href="/archives">归档</a></li>
+						
+							<li class="menu-item"><a href="/about">关于</a></li>
+						
+                         </ul>
+    </nav>
+	
+		
+<aside class="widget">
+		<h3 class="widget-title">归档</h3>		
+		<ul>
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">2</span></li></ul>
+		</ul>
+	</aside>
+
+
+	
+		<aside class="widget">
+    <input id="local-search-input" type="search" class="search-field" placeholder="Search …" value="" name="s">
+    <div id="local-search-result" class="search-result">
+    </div>
+</aside>
+	
+		
+<aside class="widget">
+		<h3 class="widget-title">最新文章</h3>		
+		<ul>
+			
+          <li>
+            <a href="/2022/01/21/how-to-create-your-own-product-with-one-person/">一个人如何开发个人产品</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/20/my-2021/">2021年度回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/02/activate-stripe-in-china-for-free/">中国用户如何免费激活Stripe?</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/30/wordpress-stripe-express-released/">Wordpress 插件 Stripe Express 发布啦！</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/20/mobx/">Mobx在项目中的实践 及 与Redux的比较</a>
+          </li>
+        
+		</ul>
+	</aside>
+
+
+	
+		
+  <aside class="widget">
+		<h3 class="widget-title">标签云</h3>
+        <a href="/tags/Linux/" style="font-size: 12.5px;">Linux</a> <a href="/tags/No-SQL/" style="font-size: 10px;">No-SQL</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/alipay/" style="font-size: 10px;">alipay</a> <a href="/tags/aws/" style="font-size: 17.5px;">aws</a> <a href="/tags/cors/" style="font-size: 10px;">cors</a> <a href="/tags/css/" style="font-size: 12.5px;">css</a> <a href="/tags/devops/" style="font-size: 12.5px;">devops</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/finance/" style="font-size: 10px;">finance</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 17.5px;">https</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/js/" style="font-size: 15px;">js</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/misc/" style="font-size: 10px;">misc</a> <a href="/tags/mongo/" style="font-size: 10px;">mongo</a> <a href="/tags/netlify/" style="font-size: 10px;">netlify</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/payment/" style="font-size: 15px;">payment</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/s3/" style="font-size: 10px;">s3</a> <a href="/tags/serverless/" style="font-size: 10px;">serverless</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/stripe/" style="font-size: 17.5px;">stripe</a> <a href="/tags/travis-ci/" style="font-size: 10px;">travis-ci</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a>
+    </aside>
+
+	
+</div>
+
+		</div>
+		<div id="content" class="site-content">
+			<main id="main" class="site-main" role="main">
+				
+<article class="hentry has-post-thumbnail">
+		
+	
+      <a class="post-thumbnail" href="https://images.troyyang.com/2021-1-20-year-2021-2022.png" rel="gallery_ckysc5kd3001oepongdyorfr9">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/2021-1-20-year-2021-2022.png" itemprop="image">
+      </a>
+    
+
+		
+			<header class="entry-header">
+				<h2 class="entry-title"><a class="post-title-link" href="/2022/01/20/my-2021/" rel="bookmark">2021年度回顾</a></h2>	
+			</header>
+		
+		<!-- .entry-header -->
+		<div class="entry-content">
+			
+				<hr>
+<p>简单的回顾，2021，还是处于疫情阶段，经历的人和事也挺多：</p>
+<ul>
+<li>经历人生第一次公司大裁员（自己没被裁，可看着身边一半以上的人走人流，还是感慨万分，不是因为幸运，而是归属感和危机感深深刺激了自己）</li>
+<li>自己业余开发的stripe express 产品发布一年，收获100+来自全球各地的用户，包括10+的付费用户</li>
+<li>用近半年兼职为一日本朋友开发web系统，收获了除开发经理以外，产品经理和项目管理更多角色的担当</li>
+</ul>
+<h3 id="关于裁员"><a href="#关于裁员" class="headerlink" title="关于裁员"></a>关于裁员</h3><p>作为一家美企研发中心，面对美国严峻的疫情情况，公司收入锐减，不得已开启裁员模式，看着昔日熟悉的面孔，看着离开的人开开心心拿着N+2的package离开，其中还不乏拿着顶格12+2的同事，但又同时饱含泪水的拥抱离开。。。这个时候不禁在想，到底留下来的才是幸运儿还是离开的呢？？（现在看必须是离开的，因为大多数人在一年后又重新回到公司）</p>
+<p>这次裁员，最大的感受还是人不能过的太安稳，尤其在外企这种生活工作很balance的节奏，如果不规划好自己的未来，很容易温水煮青蛙。其次是安全感，安全感一定不是公司给的，即便你是处于全球500強，so what? 一定要有自己的一套技能和体系，只有这种安全感才会让你坦然面对常说的35或者40岁危机</p>
+<h3 id="关于自己做产品"><a href="#关于自己做产品" class="headerlink" title="关于自己做产品"></a>关于自己做产品</h3><p>感想太多，单独写了另一篇 <a href="https://troyyang.com/2022/01/21/how-to-create-your-own-product-with-one-person/">一个人如何开发个人产品</a></p>
+<h3 id="关于兼职项目"><a href="#关于兼职项目" class="headerlink" title="关于兼职项目"></a>关于兼职项目</h3><p>一个机缘巧合，开始为一来自日本的华人朋友开发系统，需求从原本最初计划的匹配工具发展到日本广为流行的案件人才管理系统。找了个朋友做后端，我就负责需求沟通，前端开发，测试以及Demo等，技术栈选择的是基于AWS 的 serveless 架构。所获得的不仅仅是收入上的提高，更是如何系统的从0到1，从需求到，开发、架构整个流程的系统化，由其在AWS 上的各种服务，以前如果只是小打小闹的自己使用，那么这次算是一次商业化应用的实践。</p>
+<h3 id="2022-计划"><a href="#2022-计划" class="headerlink" title="2022 计划"></a>2022 计划</h3><p>不想写什么读多少本书，短期目标就先拿个 AWS SAA 证书吧</p>
+
+
+				
+					<div class="license-statement">本文由http://troyyang.com原创编写，转载请尽量保留版权网址，感谢您的理解与分享!</div>
+				
+				
+					
+<div class="donate-container">
+  <div class="donate-button">
+    <a class="donate">
+      打赏
+    </a>
+  </div>
+  <div class="donate-items hidden">
+    
+    <div class="item">
+        <img class="header" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/alipay.png" />
+        <img class="content" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/alipay-qr.png" />
+    </div>
+    
+    
+    <div class="item">
+        <img class="header" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/wechat.png" />
+        <img class="content" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/wechat-qr.png" />
+    </div>
+    
+  </div>
+</div>
+<style type="text/css">
+  .donate-container {
+    padding: 2rem 0rem;
+  }
+
+  .donate-container .donate-button {
+    text-align: center;
+  }
+
+  .donate-container a.donate {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    background-color: #44c767;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+  }
+
+  .donate-container a.donate:hover {
+    background-color: #5cbf2a;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 59.6875rem) {
+    .donate-container a.donate {
+      font-size: 2rem;
+      border-radius: 2rem;
+      padding: .5rem 2rem;
+    }
+  }
+
+  .donate-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donate-items.hidden {
+    display: none;
+  }
+
+  .donate-items .item {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .donate-items .item img.header {
+    width: 160px;
+    height: 40px;
+  }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    $('.donate').click(function (e) {
+      $('.donate-items').toggleClass('hidden');
+    });
+  });
+</script>
+
+				
+			
+		</div><!-- .entry-content -->
+		
+			<div class="entry-comments">
+				 
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'troyyang-com'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+  
+   
+			</div>
+		
+		<footer class="entry-footer">
+			<span class="posted-on font-asesome-icon">
+	<a href="" rel="bookmark">
+	<time class="updated" datetime="2022-01-20T11:08:49.000Z">2022-01-20</time>
+	</a>
+</span>
+
+	<span class="cat-links font-asesome-icon">
+		
+				<a href="/categories/misc/" rel="category tag">misc</a>
+		
+	</span>
+
+
+	<span class="tags-links font-asesome-icon">
+	
+		<a href="/tags/misc/" rel="category tag">misc</a>
+    
+</span>
+		
+
+    <span class="eye font-asesome-icon" >
+         <span id="/2022/01/20/my-2021/" class="leancloud_visitors" data-flag-title="2021年度回顾">
+        
+        </span>
+    </span>
+
+		</footer><!-- .entry-footer -->
+</article>
+<div class="misc">
+    <a href="#main"><span class="top font-asesome-icon">Top</span></a>
+</div>
+			</main>
+		</div>
+		<footer id="colophon" class="site-footer">
+			<div class="site-info">
+				<span>powered by <a href="https://hexo.io/">Hexo</a>&nbsp;&nbsp; theme by <a href="https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress">Troy</a> &nbsp; inspired by <a href="https://wordpress.org/themes/">wordpress</a></span>
+			</div><!-- .site-info -->
+		</footer>
+	</div>
+	
+<div id="infinite-footer">
+  <div class="container">
+      <div class="blog-info">
+          <a id="infinity-blog-title" href="#" rel="home" title="Scroll back to top">
+               Happy Coding, Happy Life!
+          </a>
+      </div>
+      <div class="blog-credits">
+        <span>蜀ICP备15004900号-1</span>
+      </div>
+  </div>
+</div><!-- #infinite-footer -->
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <!--referring from https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize("wzqncxgqp9MCPiPERe3gnX2Q-gzGzoHsz", "CCtBiqyPtJWupuozt1393AXm");
+    </script>
+    <script>
+        function showTime(Counter) {
+            var query = new AV.Query(Counter);
+            $(".leancloud_visitors").each(function () {
+                var url = $(this).attr("id").trim();
+                query.equalTo("url", url);
+                query.find({
+                    success: function (results) {
+                        if (results.length == 0) {
+                            var content = $(document.getElementById(url)).text() + ': 0';
+                            $(document.getElementById(url)).text(content);
+                            return;
+                        }
+                        for (var i = 0; i < results.length; i++) {
+                            var object = results[i];
+                            //var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+                            $(document.getElementById(url)).text(object.get('time'));
+                        }
+                    },
+                    error: function (object, error) {
+                        console.log("Error: " + error.code + " " + error.message);
+                    }
+                });
+            });
+        }
+        function addCount(Counter) {
+            var Counter = AV.Object.extend("Counter");
+            url = $(".leancloud_visitors").attr('id').trim();
+            title = $(".leancloud_visitors").attr('data-flag-title').trim();
+            var query = new AV.Query(Counter);
+            query.equalTo("url", url);
+            query.find({
+                success: function (results) {
+                    if (results.length > 0) {
+                        var counter = results[0];
+                        counter.fetchWhenSave(true);
+                        counter.increment("time");
+                        counter.save(null, {
+                            success: function (counter) {
+                                //var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
+                                // remove ': '
+                                $(document.getElementById(url)).text(counter.get('time'));
+                            },
+                            error: function (counter, error) {
+                                console.log('Failed to save Visitor num, with error message: ' + error.message);
+                            }
+                        });
+                    } else {
+                        var newcounter = new Counter();
+                        newcounter.set("title", title);
+                        newcounter.set("url", url);
+                        newcounter.set("time", 1);
+                        newcounter.save(null, {
+                            success: function (newcounter) {
+                                console.log("newcounter.get('time')=" + newcounter.get('time'));
+                                var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
+                                // remove ': '
+                                $(document.getElementById(url)).text(newcounter.get('time'));
+                            },
+                            error: function (newcounter, error) {
+                                console.log('Failed to create');
+                            }
+                        });
+                    }
+                },
+                error: function (error) {
+                    console.log('Error:' + error.code + " " + error.message);
+                }
+            });
+        }
+        $(function () {
+            var Counter = AV.Object.extend("Counter");
+            if ($('.leancloud_visitors').length == 1) {
+                addCount(Counter);
+            } else if ($('.post-title-link').length > 1) {
+                showTime(Counter);
+            }
+        });
+    </script>
+    
+
+    <script>
+    var searchData = [];
+    var $input = document.getElementById('local-search-input');
+    var $resultContent = document.getElementById('local-search-result');
+    var path = "/" + 'search.json';
+
+    $input.addEventListener('input', searchFunc);
+
+    $resultContent.addEventListener('focusout', function () {
+        $resultContent.style.display = "none";
+    });
+
+    window.addEventListener('click', function(){
+        $resultContent.style.display = "none";
+        $input.value = "";
+    });
+
+    $resultContent.addEventListener('click', function(){
+        event.stopPropagation();
+    });
+
+    function searchFunc() {
+        if (searchData.length == 0) {
+            loadData(searchFunc);
+        }
+        var str = '<ul>';
+        var keywords = $input.value.trim().toLowerCase().split(/[\s\-]+/);
+        $resultContent.innerHTML = "";
+        if ($input.value.trim().length <= 0) {
+            return;
+        }
+        // perform local searching
+        searchData.forEach(function (data) {
+            var isMatch = true;
+            var content_index = [];
+            if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+            }
+            var data_title = data.title.trim().toLowerCase();
+            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+            var data_url = data.url;
+            var index_title = -1;
+            var index_content = -1;
+            var first_occur = -1;
+            // only match artiles with not empty contents
+            if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+
+                    if (index_title < 0 && index_content < 0) {
+                        isMatch = false;
+                    } else {
+                        if (index_content < 0) {
+                            index_content = 0;
+                        }
+                        if (i == 0) {
+                            first_occur = index_content;
+                        }
+                    }
+                });
+            } else {
+                isMatch = false;
+            }
+            // show search results
+            if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                str += "</li>";
+            }
+        });
+        str += "</ul>";
+        $resultContent.innerHTML = str;
+        $resultContent.style.display = "block";
+    }
+
+    function loadData(callback) {
+        $resultContent.innerHTML = '<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>';
+        $.ajax({
+            url: path,
+            dataType: "json",
+            success: function (response) {
+                searchData = response;
+                callback();
+            }
+        });
+    }
+</script>
+
+<script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var t,e,a=0;a<c.length;a++)t=c[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=c[a];t=o,e=function(){c=c.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}function e(t,e){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)}t(),n.addEventListener("scroll",function(){e(t,n)}),n.imageLazyLoadSetting&&(n.imageLazyLoadSetting.processImages=t,n.imageLazyLoadSetting.processImagesThrottle=e)}(this);</script></body>
+</html>

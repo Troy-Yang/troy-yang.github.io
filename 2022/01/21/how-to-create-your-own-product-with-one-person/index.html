@@ -1,0 +1,521 @@
+<html>
+<!-- Head tag -->
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+		<link href="/favicon.ico" rel="icon">
+	 
+      <title>一个人如何开发个人产品 | 船长的技术博客</title>
+	<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/highlight.css">
+	
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?542b4962c3c4035fce9071b7c665f0d2";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-97838175-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d3d630390ef40ae"></script>
+
+</head>
+<body>
+	<div id="site" class="site">
+		<div id="sidebar" class="sidebar">
+			<header id="header" class="site-header">
+	<div class="site-branding">
+		<h1 class="site-title">
+			
+				<a href="/images/avatar-small.png" class="avatar-circle"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/avatar-small.png" /></a>
+			
+			<a href="/" rel="home">Troy&#39;s 博客</a></h1>
+		<p class="site-description">专注于Web开发，现在居住于成都. Happy Coding, Happy Life!</p>
+		<button class="secondary-toggle font-asesome-icon">Menu and widgets</button>
+	</div>
+</header>
+<div id="secondary" class="secondary">
+	<nav class="main-navigation">
+                         <ul id="menu-demo-menu" class="nav-menu">
+						 
+							<li class="menu-item"><a href="/">首页</a></li>
+						
+							<li class="menu-item"><a href="/archives">归档</a></li>
+						
+							<li class="menu-item"><a href="/about">关于</a></li>
+						
+                         </ul>
+    </nav>
+	
+		
+<aside class="widget">
+		<h3 class="widget-title">归档</h3>		
+		<ul>
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">2</span></li></ul>
+		</ul>
+	</aside>
+
+
+	
+		<aside class="widget">
+    <input id="local-search-input" type="search" class="search-field" placeholder="Search …" value="" name="s">
+    <div id="local-search-result" class="search-result">
+    </div>
+</aside>
+	
+		
+<aside class="widget">
+		<h3 class="widget-title">最新文章</h3>		
+		<ul>
+			
+          <li>
+            <a href="/2022/01/21/how-to-create-your-own-product-with-one-person/">一个人如何开发个人产品</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/20/my-2021/">2021年度回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/02/activate-stripe-in-china-for-free/">中国用户如何免费激活Stripe?</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/30/wordpress-stripe-express-released/">Wordpress 插件 Stripe Express 发布啦！</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/20/mobx/">Mobx在项目中的实践 及 与Redux的比较</a>
+          </li>
+        
+		</ul>
+	</aside>
+
+
+	
+		
+  <aside class="widget">
+		<h3 class="widget-title">标签云</h3>
+        <a href="/tags/Linux/" style="font-size: 12.5px;">Linux</a> <a href="/tags/No-SQL/" style="font-size: 10px;">No-SQL</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/alipay/" style="font-size: 10px;">alipay</a> <a href="/tags/aws/" style="font-size: 17.5px;">aws</a> <a href="/tags/cors/" style="font-size: 10px;">cors</a> <a href="/tags/css/" style="font-size: 12.5px;">css</a> <a href="/tags/devops/" style="font-size: 12.5px;">devops</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/finance/" style="font-size: 10px;">finance</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 17.5px;">https</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/js/" style="font-size: 15px;">js</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/misc/" style="font-size: 10px;">misc</a> <a href="/tags/mongo/" style="font-size: 10px;">mongo</a> <a href="/tags/netlify/" style="font-size: 10px;">netlify</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/payment/" style="font-size: 15px;">payment</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/s3/" style="font-size: 10px;">s3</a> <a href="/tags/serverless/" style="font-size: 10px;">serverless</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/stripe/" style="font-size: 17.5px;">stripe</a> <a href="/tags/travis-ci/" style="font-size: 10px;">travis-ci</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/web前端/" style="font-size: 20px;">web前端</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a>
+    </aside>
+
+	
+</div>
+
+		</div>
+		<div id="content" class="site-content">
+			<main id="main" class="site-main" role="main">
+				
+<article class="hentry ">
+		
+		
+			<header class="entry-header">
+				<h2 class="entry-title"><a class="post-title-link" href="/2022/01/21/how-to-create-your-own-product-with-one-person/" rel="bookmark">一个人如何开发个人产品</a></h2>	
+			</header>
+		
+		<!-- .entry-header -->
+		<div class="entry-content">
+			
+				<hr>
+<p>经过一年的打磨，现在产品的状态应该处于稳定上升期，收获100+来自全球各地的稳定用户，包括10+的付费用户，不算大的成功，但也能激励我继续投入, 相关的输出部分提现在下面的link 中：</p>
+<ul>
+<li><a href="https://itstripe.com/" target="_blank" rel="noopener">https://itstripe.com/</a></li>
+<li><a href="https://docs.itstripe.com/" target="_blank" rel="noopener">https://docs.itstripe.com/</a></li>
+<li><a href="https://wordpress.org/plugins/wp-stripe-express/" target="_blank" rel="noopener">https://wordpress.org/plugins/wp-stripe-express/</a></li>
+</ul>
+<h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><p>是什么促使你有做这个产品的想法，一定是某个痛点被暴露，无论是你自己遇到或者朋友，客户遇到，做这个有前途吗？收益值得做吗？这些应该是最初的那个想法应该带给你的第一个问题。以我做的这个为例，因为之前写的一篇关于stripe在中国的微信和支付宝支付的文章，被很多读者关注，也收到很多询问问题的邮件，本着能帮就帮的原则，绝大多数邮件也都仔细回复，甚至有些还被添加了微信，在和好多用户的沟通中，发现好些都是期望用到wordpress 中去，于是开始了对WP 的了解，之前懂一点WP，知道很多人在用，可没想到居然多年过去，还是这么火爆，维基百科显示超过全球40%的网站都是由它搭建，并且还有上涨的趋势(大火的 wix 也只能占零头不到)，实在惊呆，其中不乏很多厂商依靠他来售卖插件和主题，市场还是足够大。为何我不能做一款基于WP的免费+付费插件，定位于前期面向中国，后期更多海外国家支付，再想大一点，专做Stripe 集成服务，毕竟这几年对stripe的开发还是很熟悉，而国内对这部分的了解还是很少？</p>
+<h3 id="前期调研"><a href="#前期调研" class="headerlink" title="前期调研"></a>前期调研</h3><p>找出竞争者，看下当下的市场情况，能做到多大， 能比竞争者做的更好吗，甚至技术的调研。经过一段时间的调查，列出了一个100%匹配的竞争者以及几个间接竞争者。从调研的角度看，这个产品值得做，为什么，因为世面上已经有，就代表有市场，不用担心做的东西没人用，这倒是省去了一大顾虑，接下来的考虑就是如何超过他们。从产品角度而言，对于这个直接竞争者，我有90%的把握比他做的更好，既然他能买出产品，那为什么我不能？所以后面定的第一个短期目标就是超过他，后面从自己的客户信息来看，似乎也的确也做到了。但针对中国支付，这个市场的确有点小，估计一年最多几十个付费用户，所以产品也不能单一，可以扩展到海外其他国家，这些就是这几个间接竞争者，市场够大（做的最好的一年有上万个的客户），竞争也必然更加激烈，但也是迟早需要面对的。</p>
+<h3 id="合伙人"><a href="#合伙人" class="headerlink" title="合伙人"></a>合伙人</h3><p>之所以想找合伙人，初衷是自己之前也独立做过一些好玩的东西，知道单打独斗的困难，不是因为事情繁杂，而是孤独，以及孤独带来的惰性，希望两个人的话，能相互互补，互相搀扶。后来也找到了一个在德国的好朋友，可惜没多久因为他忙于学业，最终还是落到了一个人头上，经过这短暂的合作，深深的明白这句“一个人可以让你走的更快，一个团队可以让你走的更远”。个人的建议是，如果是产品初期，并且自己属于产品控以及强势的一方，最好还是一个人做，会省掉你很多时间和精力，不用去想沟通的成本，后期如何合作运营，想法的冲突和利益的分配等等，一个人会让项目推进的更快更符合自己的初衷，当然事情会更多更杂。但是后期，等到产品雏形一出，甚至投入市场，则需要更多更专业的投入和设计，此时拿着产出去找投资或者合伙人不是更有信心吗？</p>
+<h3 id="总体规划"><a href="#总体规划" class="headerlink" title="总体规划"></a>总体规划</h3><p>列了个之前做的计划图，实际的计划远不止这个图<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/2021-1-20-stripe-express-plugin-plan.png" alt=""></p>
+<h3 id="产品研发"><a href="#产品研发" class="headerlink" title="产品研发"></a>产品研发</h3><p>想做一个专业的针对国外的软件产品，不是简单的前端加后端，再套个UI 就完事了，至少下面的项目是需要考虑的：</p>
+<h4 id="官网-https-itstripe-com"><a href="#官网-https-itstripe-com" class="headerlink" title="官网 (https://itstripe.com)"></a>官网 (<a href="https://itstripe.com" target="_blank" rel="noopener">https://itstripe.com</a>)</h4><p>（主域名，Logo, 企业邮箱，技术支持， 产品介绍，演示(Demo)，价格定位，各种条约：隐私，授权，退款条约等等）</p>
+<p>门面必须要有，并且一定要专业！其中，主域名一定要想好，后期所有推广，品牌都和这个息息相关，不能后面随便修改，官网的实现是基于gatsby JS，然后自己找了个好看点的主题魔改，虽然还是很丑（一位付费用户抱怨这网站看起来不专业），但还能将就用，最后托管到gitlab 的page 上，后端就一个AWS lambda 提供API 来发送contact me的邮件。</p>
+<p>企业邮箱可以使用阿里云的企业邮箱服务，5年免费，可以薅一下，有企业邮箱会让你的网站更加专业，客户会更加信任，什么<a href="mailto:sales@itstripe.com" target="_blank" rel="noopener">sales@itstripe.com</a>, <a href="mailto:support@itstripe.com" target="_blank" rel="noopener">support@itstripe.com</a> 等等等等，虽然都是我一个人在打理，哈哈</p>
+<p>条约，一定要重视，从google analysis 上看，神奇的是，如此偏门的页面居然也有不少人会去点击，让我不得不重视其中的每一条每一款。 </p>
+<h4 id="产品帮助文档-https-docs-itstripe-com"><a href="#产品帮助文档-https-docs-itstripe-com" class="headerlink" title="产品帮助文档(https://docs.itstripe.com)"></a>产品帮助文档(<a href="https://docs.itstripe.com" target="_blank" rel="noopener">https://docs.itstripe.com</a>)</h4><p>产品当然得有帮助文档，要不然客户每次来烦你，你的邮件一定会爆的，什么quick start guide, setting, Q&amp;A 放文档上就好了，节约你和客户的大把时间。 </p>
+<h4 id="产品-Demo-https-itstripe-com-demo-https-demo-itstripe-com"><a href="#产品-Demo-https-itstripe-com-demo-https-demo-itstripe-com" class="headerlink" title="产品 Demo (https://itstripe.com/demo, https://demo.itstripe.com)"></a>产品 Demo (<a href="https://itstripe.com/demo" target="_blank" rel="noopener">https://itstripe.com/demo</a>, <a href="https://demo.itstripe.com" target="_blank" rel="noopener">https://demo.itstripe.com</a>)</h4><p>当然也少不了了，哪怕是静态的也好，这是目标客户点击率最高的地方。</p>
+<h4 id="产品研发-https-wordpress-org-plugins-wp-stripe-express"><a href="#产品研发-https-wordpress-org-plugins-wp-stripe-express" class="headerlink" title="产品研发 (https://wordpress.org/plugins/wp-stripe-express/)"></a>产品研发 (<a href="https://wordpress.org/plugins/wp-stripe-express/" target="_blank" rel="noopener">https://wordpress.org/plugins/wp-stripe-express/</a>)</h4><p>做的WP插件，需要考虑，如何安装，激活，如何区分付费和免费用户，如何升级付费用户，客户如何支付，如何管理License（是否过期等）</p>
+<p>自学了php，wordpress API, 外加 4 个 react repo(官网，文档，插件后端，插件前端) ，对于如何集成付费用户，又使用到了freemius 来管理代码和客户，为了产品的介绍，又摸索学习了Figma 设计图形，logo </p>
+<h4 id="运营"><a href="#运营" class="headerlink" title="运营"></a>运营</h4><p>保证优质的回复每一封客户的邮件，遵守退款条约（退了两三次，好心痛），从客户需求里或者自己挖掘新功能（千万别模仿竞争者，保持产品的独立性），保持定期产品更新，让目标客户或者现有客户知道这产品的活力，WP 上不少插件都是没人维护状态。</p>
+<p>下面是我指定的 TODO 运维图，有些是客户提的需求，一些来自自己发现需要优化的地方。<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/2021-1-20-stripe-express-plugin-todos.png" alt=""></p>
+<h4 id="客户的-feedback-是你产品最大的财富"><a href="#客户的-feedback-是你产品最大的财富" class="headerlink" title="客户的 feedback 是你产品最大的财富"></a>客户的 feedback 是你产品最大的财富</h4><p>下面是最近来自德国一位付费用户的邮件回复，真的深深的让我体会到，你的产品远没你想的那么好，但你的付出总会得到回报：</p>
+<blockquote>
+<p>So I’m happy about you being so responsive and willing to help, because looking at the low number of installations shown for your free version on Wordpress org, the at first not working feature for metadata, broken homepage and the failed payment and no imprint with physical company address on homepage did not make the very best impression at first. You have proved, that my first impression was not right, but I bet others that evaluate the best Stripe plugin might come to a similar conclusion. </p>
+</blockquote>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>这一年以来，还是花了太多的业余时间在这上面，包括多少个周末，甚至大理游玩都在弄，到现在也只是踏出了第一步， 列表里还列了很多关于这产品的TODO LIST，包括UI 的更新，大功能新增等，希望来年能完善好。</p>
+<p>产品的故事实在太多，写着写着就停不下来，也许这就是折腾的意义，对提升个人知识的广度实在太多了</p>
+
+
+				
+					<div class="license-statement">本文由http://troyyang.com原创编写，转载请尽量保留版权网址，感谢您的理解与分享!</div>
+				
+				
+					
+<div class="donate-container">
+  <div class="donate-button">
+    <a class="donate">
+      打赏
+    </a>
+  </div>
+  <div class="donate-items hidden">
+    
+    <div class="item">
+        <img class="header" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/alipay.png" />
+        <img class="content" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/alipay-qr.png" />
+    </div>
+    
+    
+    <div class="item">
+        <img class="header" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/wechat.png" />
+        <img class="content" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/wechat-qr.png" />
+    </div>
+    
+  </div>
+</div>
+<style type="text/css">
+  .donate-container {
+    padding: 2rem 0rem;
+  }
+
+  .donate-container .donate-button {
+    text-align: center;
+  }
+
+  .donate-container a.donate {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    background-color: #44c767;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+  }
+
+  .donate-container a.donate:hover {
+    background-color: #5cbf2a;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 59.6875rem) {
+    .donate-container a.donate {
+      font-size: 2rem;
+      border-radius: 2rem;
+      padding: .5rem 2rem;
+    }
+  }
+
+  .donate-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donate-items.hidden {
+    display: none;
+  }
+
+  .donate-items .item {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .donate-items .item img.header {
+    width: 160px;
+    height: 40px;
+  }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    $('.donate').click(function (e) {
+      $('.donate-items').toggleClass('hidden');
+    });
+  });
+</script>
+
+				
+			
+		</div><!-- .entry-content -->
+		
+			<div class="entry-comments">
+				 
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'troyyang-com'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+  
+   
+			</div>
+		
+		<footer class="entry-footer">
+			<span class="posted-on font-asesome-icon">
+	<a href="" rel="bookmark">
+	<time class="updated" datetime="2022-01-21T11:08:49.000Z">2022-01-21</time>
+	</a>
+</span>
+
+	<span class="cat-links font-asesome-icon">
+		
+				<a href="/categories/stripe/" rel="category tag">stripe</a>
+		
+	</span>
+
+
+	<span class="tags-links font-asesome-icon">
+	
+		<a href="/tags/payment/" rel="category tag">payment</a>
+    
+		<a href="/tags/stripe/" rel="category tag">stripe</a>
+    
+</span>
+		
+
+    <span class="eye font-asesome-icon" >
+         <span id="/2022/01/21/how-to-create-your-own-product-with-one-person/" class="leancloud_visitors" data-flag-title="一个人如何开发个人产品">
+        
+        </span>
+    </span>
+
+		</footer><!-- .entry-footer -->
+</article>
+<div class="misc">
+    <a href="#main"><span class="top font-asesome-icon">Top</span></a>
+</div>
+			</main>
+		</div>
+		<footer id="colophon" class="site-footer">
+			<div class="site-info">
+				<span>powered by <a href="https://hexo.io/">Hexo</a>&nbsp;&nbsp; theme by <a href="https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress">Troy</a> &nbsp; inspired by <a href="https://wordpress.org/themes/">wordpress</a></span>
+			</div><!-- .site-info -->
+		</footer>
+	</div>
+	
+<div id="infinite-footer">
+  <div class="container">
+      <div class="blog-info">
+          <a id="infinity-blog-title" href="#" rel="home" title="Scroll back to top">
+               Happy Coding, Happy Life!
+          </a>
+      </div>
+      <div class="blog-credits">
+        <span>蜀ICP备15004900号-1</span>
+      </div>
+  </div>
+</div><!-- #infinite-footer -->
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <!--referring from https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize("wzqncxgqp9MCPiPERe3gnX2Q-gzGzoHsz", "CCtBiqyPtJWupuozt1393AXm");
+    </script>
+    <script>
+        function showTime(Counter) {
+            var query = new AV.Query(Counter);
+            $(".leancloud_visitors").each(function () {
+                var url = $(this).attr("id").trim();
+                query.equalTo("url", url);
+                query.find({
+                    success: function (results) {
+                        if (results.length == 0) {
+                            var content = $(document.getElementById(url)).text() + ': 0';
+                            $(document.getElementById(url)).text(content);
+                            return;
+                        }
+                        for (var i = 0; i < results.length; i++) {
+                            var object = results[i];
+                            //var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+                            $(document.getElementById(url)).text(object.get('time'));
+                        }
+                    },
+                    error: function (object, error) {
+                        console.log("Error: " + error.code + " " + error.message);
+                    }
+                });
+            });
+        }
+        function addCount(Counter) {
+            var Counter = AV.Object.extend("Counter");
+            url = $(".leancloud_visitors").attr('id').trim();
+            title = $(".leancloud_visitors").attr('data-flag-title').trim();
+            var query = new AV.Query(Counter);
+            query.equalTo("url", url);
+            query.find({
+                success: function (results) {
+                    if (results.length > 0) {
+                        var counter = results[0];
+                        counter.fetchWhenSave(true);
+                        counter.increment("time");
+                        counter.save(null, {
+                            success: function (counter) {
+                                //var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
+                                // remove ': '
+                                $(document.getElementById(url)).text(counter.get('time'));
+                            },
+                            error: function (counter, error) {
+                                console.log('Failed to save Visitor num, with error message: ' + error.message);
+                            }
+                        });
+                    } else {
+                        var newcounter = new Counter();
+                        newcounter.set("title", title);
+                        newcounter.set("url", url);
+                        newcounter.set("time", 1);
+                        newcounter.save(null, {
+                            success: function (newcounter) {
+                                console.log("newcounter.get('time')=" + newcounter.get('time'));
+                                var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
+                                // remove ': '
+                                $(document.getElementById(url)).text(newcounter.get('time'));
+                            },
+                            error: function (newcounter, error) {
+                                console.log('Failed to create');
+                            }
+                        });
+                    }
+                },
+                error: function (error) {
+                    console.log('Error:' + error.code + " " + error.message);
+                }
+            });
+        }
+        $(function () {
+            var Counter = AV.Object.extend("Counter");
+            if ($('.leancloud_visitors').length == 1) {
+                addCount(Counter);
+            } else if ($('.post-title-link').length > 1) {
+                showTime(Counter);
+            }
+        });
+    </script>
+    
+
+    <script>
+    var searchData = [];
+    var $input = document.getElementById('local-search-input');
+    var $resultContent = document.getElementById('local-search-result');
+    var path = "/" + 'search.json';
+
+    $input.addEventListener('input', searchFunc);
+
+    $resultContent.addEventListener('focusout', function () {
+        $resultContent.style.display = "none";
+    });
+
+    window.addEventListener('click', function(){
+        $resultContent.style.display = "none";
+        $input.value = "";
+    });
+
+    $resultContent.addEventListener('click', function(){
+        event.stopPropagation();
+    });
+
+    function searchFunc() {
+        if (searchData.length == 0) {
+            loadData(searchFunc);
+        }
+        var str = '<ul>';
+        var keywords = $input.value.trim().toLowerCase().split(/[\s\-]+/);
+        $resultContent.innerHTML = "";
+        if ($input.value.trim().length <= 0) {
+            return;
+        }
+        // perform local searching
+        searchData.forEach(function (data) {
+            var isMatch = true;
+            var content_index = [];
+            if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+            }
+            var data_title = data.title.trim().toLowerCase();
+            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+            var data_url = data.url;
+            var index_title = -1;
+            var index_content = -1;
+            var first_occur = -1;
+            // only match artiles with not empty contents
+            if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+
+                    if (index_title < 0 && index_content < 0) {
+                        isMatch = false;
+                    } else {
+                        if (index_content < 0) {
+                            index_content = 0;
+                        }
+                        if (i == 0) {
+                            first_occur = index_content;
+                        }
+                    }
+                });
+            } else {
+                isMatch = false;
+            }
+            // show search results
+            if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                str += "</li>";
+            }
+        });
+        str += "</ul>";
+        $resultContent.innerHTML = str;
+        $resultContent.style.display = "block";
+    }
+
+    function loadData(callback) {
+        $resultContent.innerHTML = '<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>';
+        $.ajax({
+            url: path,
+            dataType: "json",
+            success: function (response) {
+                searchData = response;
+                callback();
+            }
+        });
+    }
+</script>
+
+<script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var t,e,a=0;a<c.length;a++)t=c[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=c[a];t=o,e=function(){c=c.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}function e(t,e){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)}t(),n.addEventListener("scroll",function(){e(t,n)}),n.imageLazyLoadSetting&&(n.imageLazyLoadSetting.processImages=t,n.imageLazyLoadSetting.processImagesThrottle=e)}(this);</script></body>
+</html>
