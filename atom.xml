@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://troyyang.com/"/>
-  <updated>2022-05-24T15:47:04.839Z</updated>
+  <updated>2022-08-01T14:44:14.620Z</updated>
   <id>http://troyyang.com/</id>
   
   <author>
@@ -16,11 +16,83 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何通过 AWS certified solution architect associate (SAA)</title>
+    <link href="http://troyyang.com/2022/07/31/how-to-get-aws-certified-solutions-architect-associate/"/>
+    <id>http://troyyang.com/2022/07/31/how-to-get-aws-certified-solutions-architect-associate/</id>
+    <published>2022-07-31T11:08:49.000Z</published>
+    <updated>2022-08-01T14:44:14.620Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<p>每天一两个小时的学习，前前后后三四个月，除了高考，也就这次考试的重视程度最高，最紧张了。回过头，看着网上评论有说小白一个月通过，我不太相信，即便对于我有一点AWS 基础的，考的过程还是很有压力。所以如果你也是准备在考的，请一定一定别低估考试的难度，务必准备足够充分。</p>
+<h3 id="考证缘由"><a href="#考证缘由" class="headerlink" title="考证缘由"></a>考证缘由</h3><p>说起为何想着考这个证，主要有几个原因：1. AWS的情怀，在前面的三四年里，在一些个人项目里或多或少的用过一些AWS 服务，像EC2, Lamda, DynamoDB, Route53 等，也分享过一些AWS的文章<a href="https://troyyang.com/2018/05/12/aws_structure_series/">aws_structure_series</a>，所以想要继续提升aws的技能 2. 私下在和一位日本华人合作的过程中，发现国外的项目对AWS需求很大，如果能有个证，在项目上会有一定优势. 3. 个人的转型尝试 (也算是backup 吧)</p>
+<h3 id="考试须知"><a href="#考试须知" class="headerlink" title="考试须知"></a>考试须知</h3><ul>
+<li>报名费：$150，考试失败，需重新缴费补考</li>
+<li>考试时间为 130 分钟 （划重点，对于咱们中国考生，可申请考试通融额外获取30分钟）</li>
+<li>65 道，单选题或多选题 (15道不计分，多选题题目数不定)</li>
+<li>Pearson VUE 和 PSI；考试中心或在线监考考试 （我是线上考的，但硬件和网络要求需考虑）</li>
+<li>考试语言可选中英文，推荐选择中文，可在考试中来回切换中英文</li>
+<li>SAA-C02试题会在8月29, 2022 过期，之后会采用C03 (所以我是看这个deadline 来安排我的考试)</li>
+</ul>
+<h3 id="备考历程"><a href="#备考历程" class="headerlink" title="备考历程"></a>备考历程</h3><p>从三四月决定考试开始，一开始便不知所措，除了官网的考试大纲和样本试题，国内的考试指南文章都实在帮助很小，大部分最后还是落在各种service 范围上，想要找到一个系统性的中文学习视频或文档实在很难，所以之后的所有重心都放在了国外的资源上，下面是我自个按照学习的时间线列出的资源：</p>
+<ul>
+<li>下载考试大纲和样本试题pdf <a href="https://aws.amazon.com/cn/certification/certified-solutions-architect-associate/?c=sec&amp;sec=resources" target="_blank" rel="noopener">https://aws.amazon.com/cn/certification/certified-solutions-architect-associate/?c=sec&amp;sec=resources</a></li>
+<li><a href="https://www.youtube.com/watch?v=jypuayQpvao" target="_blank" rel="noopener">Youtube 小哥如何通过考试</a> 十几分钟，但非常励志，由其是SET A DEADLINE WITH A CONSEQUENCE </li>
+<li>AWS 官方学习课程 <a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/1851/aws-technical-essentials?saa=sec&amp;sec=prep" target="_blank" rel="noopener">AWS Technical Essentials</a>(5小时) 非常棒的介绍和引导，免费  </li>
+<li><a href="https://www.youtube.com/watch?v=Ia-UEYYR44s&amp;t=1175s" target="_blank" rel="noopener">Youtube AWS full course by FreeCodeCamp.org</a> 10小时，非常全面且免费，但缺少hands on</li>
+<li><a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/" target="_blank" rel="noopener">视频教程 Stephane Maarek SAA by udemy.com</a> ~28小时，我的学习主力，需购买大约$15，请注意这是C02，后面应该买C03了</li>
+<li><a href="https://jayendrapatil.com/" target="_blank" rel="noopener">jayendrapatil.com</a> 必须要提这人的博客，几乎所有备考的人都提到了他，包括了几乎所有考点，但文章真的太多，我大部分review 过，只是用来总结自己是否掌握过相关知识点，但推荐每篇都仔细看。</li>
+<li><a href="https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate" target="_blank" rel="noopener">Practice Exams</a> 需购买，大约$20，6套试题，但感觉这些难度有点高，考了四套，都才50% 到 60%，建议换其他如<a href="https://www.whizlabs.com/aws-solutions-architect-associate/" target="_blank" rel="noopener">whizlabs</a></li>
+<li>官方白皮书的介绍以及FAQ</li>
+</ul>
+<p>最最重要的，可能就是hands on了，务必动手多练, 比如 VPC，EBS+ASG, S3 等等，一是光看大部分肯定都记不住并且连不起来，二是真的就只是为了拿证了，实在不是个合格的云架构师，一些看似很简单的设计比如两层架构，一上手才会知道自己会漏多少。</p>
+<h3 id="报考流程"><a href="#报考流程" class="headerlink" title="报考流程"></a>报考流程</h3><p>登录 <a href="https://www.aws.training/" target="_blank" rel="noopener">https://www.aws.training/</a> 后，最后被导航至 <a href="https://www.certmetrics.com/" target="_blank" rel="noopener">https://www.certmetrics.com/</a> ，填写好个人信息后（姓名务必使用拼音），就可以选择注册参考考试。（后期的成绩查询，证书下载都是在这个网站，PS：2021年11月后，证书已经更新，已经完全和网上看到的不一样了，黑底白字带验证码，实在不好看）</p>
+<blockquote>
+<p>可以申请考试通融延迟30分钟考试时间，如果选的是PSI， 可直接点击申请，基本申请就显示成功，之后的考试时间就会是160分钟</p>
+</blockquote>
+<h3 id="考试过程"><a href="#考试过程" class="headerlink" title="考试过程"></a>考试过程</h3><h4 id="考前准备"><a href="#考前准备" class="headerlink" title="考前准备"></a>考前准备</h4><ul>
+<li>准备<strong>护照</strong>在手，（身份证不行，没有拼音和签名）</li>
+<li>在线考试对自己的考场要求很严，需腾空考试房间，确保房间安静，房门关闭，中途不得上厕所，一旦有人或杂音，考官会终止考试</li>
+</ul>
+<blockquote>
+<p>使用的PSI在线考试， 一直犹豫要不要选择Pearson VUE 考试中心现场考，但最终还是选择家里考，主要是因为当时PSI 有个考试优惠，以及疫情影响。如果家里网络稳定，以及对电脑有信心，最好是MAC，可以尝试在线考试。PSI 会在考试期间使用自家的浏览器，可锁定屏幕以及禁止其他软件运行，可提前下好，也可登录系统根据提示下载，下载地址在<a href="https://tca.psiexams.com/portal/testdelivery/sb_rpnow_download.jsp" target="_blank" rel="noopener">这里</a></p>
+</blockquote>
+<h4 id="考试中"><a href="#考试中" class="headerlink" title="考试中"></a>考试中</h4><p>选择的是9:30考，大概9点我就已经迫不及待的进入系统，按照操作，扫描护照鉴权通过后，考官会出现在对话框里，你看不见他，他能看见你，随后，他会有各种指示命令让显示各种视频角度等等检测（发现了我桌上的矿泉水都让给倒了），一切OK 会，考官会发题正式开始答题。</p>
+<p>然后就是漫长的两个小时多的答题时间。。。原本的130分钟时间倒是差不多够，但由于我申请了通融，有多余的半个小时，花了十几分钟检查标记的题目。最后实在扛不住了，点击提交，再经过焦急的几秒后，终于显示通过。。。</p>
+<h4 id="考试回顾"><a href="#考试回顾" class="headerlink" title="考试回顾"></a>考试回顾</h4><p>总体感觉很多架构题还挺有难度，简单的也有，大概20，30%，比如关于DDOS, XSS防范的服务是什么， 还记得其他比如</p>
+<ul>
+<li>Security group 相关的： web tier 和 database tier, 1433, 443</li>
+<li>route53 多IP 策略（multi value）</li>
+<li>VPC peering, private, public, nat</li>
+<li>fraget, EKS</li>
+<li>SQS, SNS</li>
+<li>cloud front 的字段加密<br>上面都还只是不太难的，难的都记不住了</li>
+</ul>
+<h3 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h3><p>回过头，最大的收获不是获得这个证的荣誉，而是在面临工作压力，家庭琐事等等都情况下，坚持做一件有挑战的事，并做成后的成就感。其次，就是那个小哥说的SET A DEADLINE WITH A CONSEQUENCE, 为目标设置截止日，这个深有体会，之前曾设定6.1 日考试，可因为各种各样的原因一推再推，最后7月底才完成，所以没有破釜沉舟的决心是很容易懒惰下去并背离自己的预设目标。</p>
+<p>证书有效期只有三年，所以这仅仅是一个开始，希望自己继续在云架构这条路上继续深造！</p>
+<p>最后附一张常见VPC架构图收尾，你是否都知道？<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/2022-07-31-aws-vpc-architect.png" alt=""> </p>
+]]></content>
+    
+    <summary type="html">
+    
+      花了三四个月的业余时间，终于通过 AWS SAA 认证。回过头，最大的收获不是获得这个证的荣誉，而是在面临工作压力，家庭琐事等等都情况下，坚持做一件有挑战的事，并做成后的成就感。
+    
+    </summary>
+    
+      <category term="aws" scheme="http://troyyang.com/categories/aws/"/>
+    
+    
+      <category term="aws" scheme="http://troyyang.com/tags/aws/"/>
+    
+      <category term="certification" scheme="http://troyyang.com/tags/certification/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一个人如何开发个人产品</title>
     <link href="http://troyyang.com/2022/01/21/how-to-create-your-own-product-with-one-person/"/>
     <id>http://troyyang.com/2022/01/21/how-to-create-your-own-product-with-one-person/</id>
     <published>2022-01-21T11:08:49.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>经过一年的打磨，现在产品的状态应该处于稳定上升期，收获100+来自全球各地的稳定用户，包括10+的付费用户，不算大的成功，但也能激励我继续投入, 相关的输出部分提现在下面的link 中：</p>
@@ -72,7 +144,7 @@
     <link href="http://troyyang.com/2022/01/20/my-2021/"/>
     <id>http://troyyang.com/2022/01/20/my-2021/</id>
     <published>2022-01-20T11:08:49.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>简单的回顾，2021，还是处于疫情阶段，经历的人和事也挺多：</p>
@@ -106,7 +178,7 @@
     <link href="http://troyyang.com/2021/06/02/activate-stripe-in-china-for-free/"/>
     <id>http://troyyang.com/2021/06/02/activate-stripe-in-china-for-free/</id>
     <published>2021-06-02T11:08:49.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<h1 id="中国用户如何免费激活Stripe"><a href="#中国用户如何免费激活Stripe" class="headerlink" title="中国用户如何免费激活Stripe?"></a>中国用户如何免费激活Stripe?</h1><p>本文会介绍无需开设海外银行账号或者香港账号，并免费的通过注册激活Stripe账号并提现，亲测有效！</p>
 <p>主要通过使用万里汇海外账号绑定激活，其中万里汇是蚂蚁金服旗下的产品，值得可靠。（不是给万里汇打广告哦）</p>
@@ -163,7 +235,7 @@
 <p>等着这两个错误完成后，这个账号就算真正激活完成，并可以完成提现（每天，并且非常快）。</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/uploads/2021-06-02-stripe-payout.png" alt=""></p>
 <hr>
-<h3 id="万里汇提现到人民币-暂没尝试"><a href="#万里汇提现到人民币-暂没尝试" class="headerlink" title="万里汇提现到人民币(暂没尝试)"></a>万里汇提现到人民币(暂没尝试)</h3><p>现在万里汇香港账号已经有收到的港币了，但如果需要的话，需要转为人民币（可转到支付宝），但根据万里汇客户经理说明，这是需要提供相应凭据，也就是stripe 或者 paypal 上的支付记录，表明来历明确。</p>
+<h3 id="万里汇提现到人民币-成功"><a href="#万里汇提现到人民币-成功" class="headerlink" title="万里汇提现到人民币(成功)"></a>万里汇提现到人民币(成功)</h3><p>现在万里汇香港账号已经有收到的港币了，但如果需要的话，需要转为人民币（可转到支付宝），但根据万里汇客户经理说明，这是需要提供相应凭据，也就是stripe 或者 paypal 上的支付记录，表明来历明确。提现过一次，因为金额不大，并且提供了paypay 的收款记录，所以成功提现。</p>
 <p>特别提醒的是，这篇文章目的只是为激活stripe指南， 不为跨境转账成功负责，请酌情选择。</p>
 <p>特此声明，本文禁止转载至除 troyyang.com, <a href="http://itstripe.com" target="_blank" rel="noopener">itstripe.com</a> 以外的网站</p>
 <p>相关推荐文章：<br><a href="https://troyyang.com/2020/12/30/wordpress-stripe-express-released/">wordpress stripe插件，支持微信和支付宝</a><br><a href="https://troyyang.com/2018/01/21/stripe_guide_alipay/">stripe集成 微信和支付宝</a>   </p>
@@ -189,7 +261,7 @@
     <link href="http://troyyang.com/2020/12/30/wordpress-stripe-express-released/"/>
     <id>http://troyyang.com/2020/12/30/wordpress-stripe-express-released/</id>
     <published>2020-12-30T19:49:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="Stripe-Express-是什么？"><a href="#Stripe-Express-是什么？" class="headerlink" title="Stripe Express 是什么？"></a>Stripe Express 是什么？</h2><p>简单来说，Stripe Express 是一款针对wordpress 平台，帮助你使用 stripe 快速，方便完成跨境支付的一款免费插件（扩展功能收费）。其中，包括多种已经创建好的支付组件，包括一次性支付(one-time)，电子钱包（支付宝，微信，Apple Pay, Google Pay，下面重点会提到微信和支付宝），表单支付等等组件，需要提及的是，上面的组件都支持常见的各种信用卡，Master card, Visa, 等等等等，以及其他国家地区的主流支付方式比如 Bancontact, FPX, EPS, SEPA, Giropay, Sofort, iDeal。</p>
@@ -228,7 +300,7 @@
     <link href="http://troyyang.com/2020/12/20/mobx/"/>
     <id>http://troyyang.com/2020/12/20/mobx/</id>
     <published>2020-12-20T14:03:17.710Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<p>之前在公司FEE内部做过一次技术分享，主要关于Mobx在项目中的使用一年后的体验以及和Redux 的一些比较（因为我们项目之前的状态管理选型选择的是mobx，而其他项目组的同学选择主要是Redux或者还在纠结如何选）。</p>
 <p>以下都是根据查询各种资料后的个人理解概览</p>
@@ -298,7 +370,7 @@
     <link href="http://troyyang.com/2020/05/03/multi-sort-implement-with-native-js/"/>
     <id>http://troyyang.com/2020/05/03/multi-sort-implement-with-native-js/</id>
     <published>2020-05-03T16:34:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<h3 id="重要的事情还是要说的"><a href="#重要的事情还是要说的" class="headerlink" title="重要的事情还是要说的"></a>重要的事情还是要说的</h3><p>项目里没引用 <strong>lodash</strong> （因为和 underscore.js 冲突）</p>
 <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>数据结构类似这种：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const testData = [</span><br><span class="line">  &#123; name: &apos;1&apos;, primary: true, startDate: &apos;2018-01-01T08:00:00Z&apos;, endDate: &apos;2018-05-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;A&apos;, primary: true, startDate: &apos;2018-02-01T08:00:00Z&apos;, endDate: &apos;2018-06-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;a&apos;, primary: true, startDate: &apos;2019-02-01T08:00:00Z&apos;, endDate: &apos;2019-05-01T08:00:00Z&apos; &#125;,</span><br><span class="line">  &#123; name: &apos;b&apos;, primary: false, startDate: &apos;2019-02-01T08:00:00Z&apos;, endDate: &apos;2019-02-01T08:00:00Z&apos; &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
@@ -347,7 +419,7 @@
     <link href="http://troyyang.com/2019/12/17/amazing-es6-exec-order-issue/"/>
     <id>http://troyyang.com/2019/12/17/amazing-es6-exec-order-issue/</id>
     <published>2019-12-17T14:03:17.710Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<p>刷推的时候无意间发现一位google 工程师发的一个感叹，感叹发现的一个神奇的JS 6继承顺序问题。。。</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/uploads/2019-12-17-js6-class-order-miracle-tweeter.jpeg" alt=""></p>
@@ -377,7 +449,7 @@
     <link href="http://troyyang.com/2019/11/24/githug-netlify/"/>
     <id>http://troyyang.com/2019/11/24/githug-netlify/</id>
     <published>2019-11-24T04:08:35.524Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Netlify-CMS-介绍"><a href="#Netlify-CMS-介绍" class="headerlink" title="Netlify CMS 介绍"></a>Netlify CMS 介绍</h3><p>使用Netlify CMS我感觉有以下优点：</p>
 <ul>
@@ -437,7 +509,7 @@
     <link href="http://troyyang.com/2018/12/16/aws_serverless/"/>
     <id>http://troyyang.com/2018/12/16/aws_serverless/</id>
     <published>2018-12-16T09:37:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="Serverless-有什么用啊？"><a href="#Serverless-有什么用啊？" class="headerlink" title="Serverless 有什么用啊？"></a>Serverless 有什么用啊？</h3><p>Jason最近又出新想法了，想要做一个简单的用户管理系统，好的，没问题，不就是在服务器上安装数据库，部署好网站吗？可答案是no，他不是专业人员，我也不可能永远维护这个服务器，更重要的是服务器开着就要美刀啊，还不能停，怎么办？有没有可以不用服务器的网站，有啊，你自己的静态博客不就是只用到了s3或者github的静态页面托管吗？可是数据库呢，后台api呢？额，这个嘛。。。   </p>
@@ -511,7 +583,7 @@
     <link href="http://troyyang.com/2018/05/12/aws_s3_https_static_website/"/>
     <id>http://troyyang.com/2018/05/12/aws_s3_https_static_website/</id>
     <published>2018-05-12T09:37:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>本文和之前写的<a href="https://troyyang.com/2018/02/16/hosting-images-with-aws-s3/">《正确使用AWS S3的方式之打造自己的https图床》</a> 内容非常像，但也有新的内容如自动上传部署和自定义证书、Route53部分，这里主要补充新的内容。</p>
@@ -564,7 +636,7 @@
     <link href="http://troyyang.com/2018/05/12/aws_structure_series/"/>
     <id>http://troyyang.com/2018/05/12/aws_structure_series/</id>
     <published>2018-05-12T09:37:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>看着系统生成的写作时间，2018年5月12日，恐怕是让所有四川人都难以忘怀的日子，在此缅怀十年前大地震遇难的同胞，也希望曾遭受苦痛的同胞十年后的今天一切安好！</p>
@@ -666,7 +738,7 @@
     <link href="http://troyyang.com/2018/02/16/hosting-images-with-aws-s3/"/>
     <id>http://troyyang.com/2018/02/16/hosting-images-with-aws-s3/</id>
     <published>2018-02-16T22:01:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>写过博客的人都知道图床，一个托管自己博客图片的地方，当然托管到自己的服务器另当别论。常见的图床可以是新浪博客，七牛云，imgur等，但是都是有各种问题，比如我之前使用的是七牛云（也曾在<a href="https://troyyang.com/2017/05/21/Add_Free_Certification_In_Blog_Step_By_Step/">《给Github自定义域名加上HTTPS》</a>博文上推荐使用），用起来相当不错，只可惜后来备案信息过期了，导致无法再使用自定义域名，更可悲的是，https不再支持，意味着尽管我的博客是https但由于有内容是http的，只能被浏览器认为是mixed-content的。</p>
@@ -727,7 +799,7 @@
     <link href="http://troyyang.com/2018/01/21/stripe_guide_alipay/"/>
     <id>http://troyyang.com/2018/01/21/stripe_guide_alipay/</id>
     <published>2018-01-21T11:08:49.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>前段时间，因为Jason让我帮忙把Stripe支付集成到他个人网站上去，让我有机会接触到支付系统开发，同时也因为苦于没有找到太多中文方面相关文档介绍，所以做个总结，也方便以后有需要的同学。<br>(更新) 发现好些同学也在咨询如何集成微信支付，其实也是非常简单，所以新增了最后微信的实现，见最后 </p>
@@ -810,7 +882,7 @@
     <link href="http://troyyang.com/2017/12/10/cdconf/"/>
     <id>http://troyyang.com/2017/12/10/cdconf/</id>
     <published>2017-12-10T10:27:03.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<p>抽空记录一下2017年11月18日中国第十三届持续交付大会的内容，总的来说收货满满，扫盲了很多持续集成，持续交付以及众多分布式相关的技术。</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://images.troyyang.com/2017-11-18-cdconf.png" alt="image"></p>
@@ -841,7 +913,7 @@
     <link href="http://troyyang.com/2017/11/26/linux_apache_ssl_node/"/>
     <id>http://troyyang.com/2017/11/26/linux_apache_ssl_node/</id>
     <published>2017-11-26T15:59:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="SSL-配置"><a href="#SSL-配置" class="headerlink" title="SSL 配置"></a>SSL 配置</h2><h3 id="证书申请"><a href="#证书申请" class="headerlink" title="证书申请"></a>证书申请</h3><p>Cloudflare生成证书key pair 的pem 格式文件，更名为.crt和.key。文件名和扩展名只是为了提供便利，对功能没有影响；你可以将证书命名为 cert.crt、cert.pem 或 任何其他文件名。</p>
@@ -889,7 +961,7 @@
     <link href="http://troyyang.com/2017/11/07/windows-ssl-node-nginx/"/>
     <id>http://troyyang.com/2017/11/07/windows-ssl-node-nginx/</id>
     <published>2017-11-07T11:59:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>最近做一个微信小程序的时候因为要求所有请求都得是https的连接，服务器端https 倒是搭建好了，可本地测试没法进行啊，于是只能自己在本地搭建个https的服务。</p>
@@ -953,7 +1025,7 @@
     <link href="http://troyyang.com/2017/10/21/Javascript_Prototype_Inherience/"/>
     <id>http://troyyang.com/2017/10/21/Javascript_Prototype_Inherience/</id>
     <published>2017-10-21T16:57:03.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<p>首先提个问题，都知道JS中的继承方式演变了很多种，你能完整的写出一种吗？用的最多的又是那种？如果你只能想到SubClass.prototype = new ParentClass()的同学就真该好好面壁了。</p>
 <p>前段时间写了一篇<a href="https://troyyang.com/2017/06/25/Javascript_Prototype_Inherience_Understanding/">JS继承的简单理解</a>，实在是太简单了，主要是为了梳理原型和构造器的关系。最近在对公司新同事的培训中涉及到JS核心部分，所以又仔细去研究了一下，整理出这篇笔记，如有错误，欢迎指出并拍砖。</p>
@@ -1014,7 +1086,7 @@
     <link href="http://troyyang.com/2017/09/01/mongo-installation-guide/"/>
     <id>http://troyyang.com/2017/09/01/mongo-installation-guide/</id>
     <published>2017-09-01T19:20:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.620Z</updated>
     
     <content type="html"><![CDATA[<p>最近项目中用到了MongoDB，顺便就写了安装说明文档，包括创建高可靠性的副本集replica-set，远程连接，密码登录等配置。</p>
 <h3 id="安装-MongoDB"><a href="#安装-MongoDB" class="headerlink" title="安装 MongoDB"></a>安装 MongoDB</h3><ol>
@@ -1067,7 +1139,7 @@
     <link href="http://troyyang.com/2017/08/06/hexo-lazyload-image/"/>
     <id>http://troyyang.com/2017/08/06/hexo-lazyload-image/</id>
     <published>2017-08-06T18:20:22.000Z</published>
-    <updated>2022-05-24T15:47:04.839Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<h3 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h3><p>最近在看Google Chrome新出的一个API是无意间想到了对图片的懒加载，后来想想自己的网站还不支持呢，索性花了些时间让网站给支持上了，并发现Hexo上还没有一个懒加载的插件，又倒腾着写了个hexo的插件<a href="https://www.npmjs.com/package/hexo-lazyload-image" target="_blank" rel="noopener">hexo-lazyload-image</a>，并发布到NPM上供大家使用，从这几天下载数来看看来大家还是很有这个需求 :)。</p>
 <h3 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h3><p>图片懒加载是提升网站性能和用户体验的一个非常很好方式，并且几乎所有的大型网站都使用到了，比如微博，仅把用户可见的部分显示图片，其余的都暂时不加载，做法就是：让所有图片元素src指向一个小的站位图片比如loading，并新增一个属性(如data-original)存放真实图片地址。每当页面加载（或者滚动条滚动），使用JS脚本将可视区域内的图片src替换回真实地址，并做请求重新加载。 </p>
@@ -1112,7 +1184,7 @@
     <link href="http://troyyang.com/2017/06/25/Javascript_Prototype_Inherience_Understanding/"/>
     <id>http://troyyang.com/2017/06/25/Javascript_Prototype_Inherience_Understanding/</id>
     <published>2017-06-25T10:27:03.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<p>以前对于Javascipt中的继承，大部分只是基于代码层面，理论理解虽然看了很多，总是当时理解了过几天确又忘了怎么的了。这两天又看了一遍《Javascrip面向对象编程指南》，其中在说到原型链的时候有一段话解释了很多以前自己容易混淆的地方：</p>
 <blockquote>
@@ -1154,7 +1226,7 @@
     <link href="http://troyyang.com/2017/06/24/Travis_Auto_Build_Deploy_Github_Projects/"/>
     <id>http://troyyang.com/2017/06/24/Travis_Auto_Build_Deploy_Github_Projects/</id>
     <published>2017-06-24T10:31:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<p>在使用Hexo写完一篇博客后，都需要手动在本地编译，并生成静态文件，最后在上传至github服务器上才能发布，繁琐步骤姑且不说，万一哪天换了台电脑，没有Hexo环境的时候如何写博客呢又或者修改博客Bug？要是直接在github源码里写好文章后能自动编译发布就好了，好在github的好基友travis可以轻松帮我们同时实现这种持续集成, 持续部署。</p>
 <h2 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h2><p>我的博客是基于<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>写的，最终发布地址是托管到Troy-Yang/troy-yang.github.io下的，为了方便，我把源码放在他的一个source分支下，以前要写一篇博客的做法是：</p>
@@ -1207,7 +1279,7 @@
     <link href="http://troyyang.com/2017/06/06/Express_Cors_Preflight_Request/"/>
     <id>http://troyyang.com/2017/06/06/Express_Cors_Preflight_Request/</id>
     <published>2017-06-06T19:59:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h3><p>这两天在使用NodeJS Express搭建REST服务器时遇到一个很典型的AJAX跨域包含自定义请求头问题（用于身份验证），在花了大半天时间排查问题后发现自己对CORS真正的理解还很不够，尤其是pre-flight。</p>
@@ -1263,7 +1335,7 @@
     <link href="http://troyyang.com/2017/05/21/Add_Free_Certification_In_Blog_Step_By_Step/"/>
     <id>http://troyyang.com/2017/05/21/Add_Free_Certification_In_Blog_Step_By_Step/</id>
     <published>2017-05-21T15:59:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>随着Https越来越成为一种趋势，最近也给自己家博客弄上了高大上的https，主要是结合使用的cloudflare和七牛云（图床）使用，关键是免费！所以想把这个过程记录下来，万一有人用得到呢。(还想抽空写写对Https的原理的理解，主要目的还是总结前段时间自己对Https的学习。)</p>
@@ -1357,7 +1429,7 @@
     <link href="http://troyyang.com/2017/04/20/Learn_Stylin_With_Css/"/>
     <id>http://troyyang.com/2017/04/20/Learn_Stylin_With_Css/</id>
     <published>2017-04-20T22:28:36.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
 <li>子元素 &gt; :  用于选择所有给定子元素，如 .food&gt;li</li>
@@ -1416,7 +1488,7 @@
     <link href="http://troyyang.com/2017/04/16/XiaoMi_Router_Install_Shadowsocks/"/>
     <id>http://troyyang.com/2017/04/16/XiaoMi_Router_Install_Shadowsocks/</id>
     <published>2017-04-16T11:10:00.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>当然是为了省去多个终端连接的烦恼，而我的直接原因确是为了Google神器Chromecast能正常使用（就单单是电视投射功能就足以让我心动）。大半年前在美国买了一个Chromecast，在美国的时候工作的好好的，回国后确怎么也投射不了，总是找不到设备，大概猜到是因为被墙的原因，可惜电脑挂起了VPN还是不行，后来才知道是电视也需要连接Google 服务！坑爹啊！然后就一直静静的放着放着直到这次买了个服务器(也是为了科学上网)后，想试试让路由器直接连Shadowsocks。</p>
 <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
@@ -1462,7 +1534,7 @@
     <link href="http://troyyang.com/2017/03/26/Ubuntu_Install_ShadowSocks/"/>
     <id>http://troyyang.com/2017/03/26/Ubuntu_Install_ShadowSocks/</id>
     <published>2017-03-26T11:20:00.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h3><p>看了shadowsocks的各种安装部署教程，因为对于linux不熟，所以遇到很多坑，自己留个笔记在这里</p>
@@ -1520,7 +1592,7 @@
     <link href="http://troyyang.com/2017/03/11/Learn_CSS_from_wordpress_theme/"/>
     <id>http://troyyang.com/2017/03/11/Learn_CSS_from_wordpress_theme/</id>
     <published>2017-03-11T12:20:22.000Z</published>
-    <updated>2022-05-24T15:47:04.835Z</updated>
+    <updated>2022-08-01T14:44:14.616Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h3 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h3><p>最近想做个个人博客，看上了wordpress的<a href="https://wordpress.org/themes/twentyfifteen/" target="_blank" rel="noopener">twentyfifteen</a>模板页(2015默认模板)，看上了就想拥有，而拥有是需要付出代价的，于是就掉入了源码坑里，爬了一周才算勉强爬出来，回过头来觉得这个坑里还是有很多有营养的东西，毕竟是大公司，所有标准都是最新的，所以想总结下学到的东西，方便以后使用(持续更新中)</p>
