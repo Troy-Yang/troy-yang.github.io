@@ -1,5 +1,5 @@
 ---
-title: 一个人如何开发个人产品
+title: 一个人如何开发产品
 date: 2022-01-21 11:08:49
 author: Troy
 tags:
