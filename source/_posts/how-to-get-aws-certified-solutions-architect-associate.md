@@ -17,7 +17,7 @@ photos:
 
 ### 考证缘由
 
-说起为何想着考这个证，主要有几个原因：1. AWS的情怀，在前面的三四年里，在一些个人项目里或多或少的用过一些AWS 服务，像EC2, Lamda, DynamoDB, Route53 等，也分享过一些AWS的文章[aws_structure_series](https://troyyang.com/2018/05/12/aws_structure_series/)，所以想要继续提升aws的技能 2. 私下在和一位日本华人合作的过程中，发现国外的项目对AWS需求很大，如果能有个证，在项目上会有一定优势. 3. 个人的转型尝试 (也算是backup 吧)
+说起为何想着考这个证，主要有几个原因：1. AWS的情怀，在前面的三四年里，在一些个人项目里或多或少的用过一些AWS 服务，像EC2, Lamda, DynamoDB, Route53 等，也分享过一些AWS的文章[aws_structure_series](https://troyyang.com/2018/05/12/aws_structure_series/)，所以想要继续提升aws的技能 2. 私下在和一位朋友的合作的过程中，发现国外的项目对AWS需求很大，如果能有个证，在项目上会有一定优势. 3. 个人的转型尝试 (也算是backup 吧)
 
 ### 考试须知
 
