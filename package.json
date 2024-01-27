@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.9.0"
   },
   "scripts": {
     "start": "hexo clear & hexo g & hexo server",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "clean-css": "^4.2.3",
-    "hexo": "^3.7.1",
+    "hexo": "^3.9.0",
     "hexo-baidu-url-submit": "0.0.5",
     "hexo-clean-css": "0.0.3",
     "hexo-deployer-git": "^0.3.1",
